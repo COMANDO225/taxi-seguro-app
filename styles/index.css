@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary: #FFAE00;
+    --textColor: #252525;
+    --textWhite: #fff;
+    --mainIcon_container-width: 200px;
+    --navBgColor: #fff;
+    --headerBgColor: #fff;
+
+    --width-layout: 1400px;
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a{
+    box-sizing: border-box;
+}
+a:link {
+    text-decoration: none;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+i {
+    display: inline;
+}
+button{
+    border: none;
+}
+.bg_black{
+    background-color: #000;
+}
+
+
+/* buttons */
+
+.taxi_btn{
+    position: relative;
+    width: fit-content;
+    color: #000;
+    background-color: var(--primary);
+    background-color: rgba(200, 200, 200, 0.45);
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all ease .2s;
+    /* margin: 0 auto; */
+}
+.taxi_btn:hover{
+    background-color: rgba(200, 200, 200, .65);
+}
+
+.taxi_btn.btn-shadow{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    background: transparent;
+}
+.taxi_btn.btn-shadow:hover{
+    background-color: rgba(255, 174, 0, 0.2);
+}
+.taxi_btn.btn-shadow:active{
+    border: 2px solid #d18904;
+    background: #d18904;
+    color: #fafafa;
+}
+
+.btn-primary{
+    border: 2px solid var(--primary);
+    background: var(--primary);
+    color: #fff;
+}
+.btn-primary:hover{
+    border: 2px solid var(--primary);
+    background: var(--primary);
+    box-shadow: rgba(249, 179, 50, 0.5) 0px 6px 12px -2px, rgba(249, 179, 50, 1) 0px 3px 7px -3px;
+}
+.btn-primary:active{
+    border: 2px solid #d18904;
+    background: #d18904;
+    /* box-shadow: transparent; */
+}
+
+/* button de hamburguesa */
+
+.taxi_burger{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+    user-select: none;
+}
+.linea{
+    position: absolute;
+    width: 25px;
+    border-radius: 2px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all .25s ease;
+}
+.l_sup{
+    transform: translateY(-8px);
+}
+.l_inf{
+    transform: translateY(8px);
+}
+
+.taxi_burger.active .l_sup{
+    transform: translateY(0) rotate(45deg);
+}
+.taxi_burger.active .l_cen{
+    width: 0;
+}
+.taxi_burger.active .l_inf{
+    transform: translateY(0) rotate(-45deg);
+}
+
+
+
+/* enlaces - navbar */
+.nav_items {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1px;
+}
+.nav_items.column{
+    width: 100%;
+    display: grid;
+    /* background-color: rgb(153, 181, 172); */
+    padding: 0 0 10px 0;
+}
+.enlace{
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 12px;
+    height: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1;
+}
+.column .enlace{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.nav_items.column .enlace.active::after{
+    height: 100%;
+    transition: none;
+}
+.nav_items.column .enlace.active:hover::after{
+    height: 100%;
+    width: 100%;
+}
+.enlace:hover{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0));
+}
+.enlace::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    bottom: 0;
+    left: 0;
+    transition: width .25s ease;
+    z-index: -1;
+}
+.enlace.active::after{
+    width: 100%;
+}
+.enlace.active:hover::after{
+    width: 0;
+}
+.enlace:nth-last-of-type(2){
+    margin-right: 10px;
+}
+
+/* contenedores */
+
+
+.navbar {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background-color: rgb(5, 5, 5);
+    /* color: #000; */
+    z-index: 99;
+}
+.navbar_content {
+    width: 95%;
+    max-width: var(--width-layout);
+    /* background-color: aqua; */
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Section globals styles */
+
+
+.section{
+    padding: 120px 0;
+}
+.wrapper{
+    width: 95%;
+    max-width: var(--width-layout);
+    margin: 0 auto;
+}
+.section_header.black{
+    color: #fff;
+}
+.section_body{
+    position: relative;
+    margin: 5rem 0 2rem 0;
+}
+.section_subtitle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.section_subtitle.start{
+    justify-content: start;
+}
+.section_subtitle.end{
+    justify-content: end;
+}
+
+.section_subtitle.start .line_r{
+    display: none;
+}
+.section_subtitle.end .line_l{
+    display: none;
+}
+
+.section_subtitle span{
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary);
+}
+.section_subtitle h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(189, 189, 189);
+}
+
+.section_title{
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3.35rem;
+}
+.section_title span{
+    color: var(--primary);
+}
+.section_title.start{
+    text-align: start;
+}
+.section_title.end{
+    text-align: end;
+}
+.section_parraf{
+    font-size: 17px;
+    color: #737373;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/*----------  Section nosotros  ----------*/
+
+.dual_grid{
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+}
+.nosotros_img_container {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-color: #CACACA;
+    margin: 0 auto;
+    grid-row: 2;
+}
+.nostros_parraf{
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+@media(min-width: 820px){
+    .dual_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nostros_parraf{
+        text-align: left;
+    }
+    .nosotros_img_container{
+        grid-row: 1;
+    }
+}
+
+
+/*=============================================
+=                SERVICIO SECTION             =
+=============================================*/
+
+.servicios_grid{
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* item info card */
+
+.info_card{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    min-height: 130px;
+    color: #fff;
+    border-radius: 6px;
+    grid-template-columns: auto 1fr;
+    gap: 1.25rem;
+    padding: 14px 12px;
+    margin: auto;
+}
+.info_card.card{
+    background-color: #fff;
+    color: var(--textColor);
+    padding: 2rem 18px;
+    min-height: 160px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.info_card.card:nth-of-type(1),
+.info_card.card:nth-of-type(3),
+.info_card.card:nth-of-type(5){
+    margin-left: 0;
+}
+.info_card.card:nth-of-type(2),
+.info_card.card:nth-of-type(4),
+.info_card.card:nth-of-type(6){
+    margin-right: 0;
+}
+@media(min-width: 768px){
+    .servicios_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info_card{
+        max-width: 450px;
+    }
+    .section_body{
+        margin: 8rem 0 2.5rem 0;
+    }
+}
+.info_card_svg_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.info_card_svg{
+    width: 60px;
+    height: 60px;
+    /* background-color: aqua; */
+}
+.info_card_svg svg{
+    width: 100%;
+    height: 100%;
+}
+
+.info_card_content{
+    width: 100%;
+}
+
+.info_card_title{
+    font-weight:600;
+    color: var(--primary);
+    text-transform: capitalize;
+}
+
+/*=============================================
+=                SERVICIO COVID             =
+=============================================*/
+
+.section.covid {
+    overflow: hidden;
+}
+
+.covid_layout {
+    width: 100%;
+    height: 100%;
+    /* background-color: #04ff53; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.shield_container {
+    position: absolute;
+    width: 410px;
+    height: 410px;
+    background: center no-repeat url(../public/img/shield.png);
+    background-size: contain;
+}
+
+.covid_img {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background-color: peru;
+    transform: translate(-290px, 0px);
+    background: center no-repeat url(../public/img/covid.png);
+    background-size: contain;
+}
+
+.covid_img.duplicate{
+    width: 190px;
+    height: 190px;
+    transform: none;
+    bottom: 0%;
+    right: 30%;
+}
+
+.blur{
+    width: 100px;
+    height: 100px;
+    transform: none;
+    top: 10%;
+    left: 35%;
+    background: center no-repeat url(../public/img/covidblur.png);
+}
+.blur2{
+    width: 100px;
+    height: 100px;
+    transform: none;
+    top: 21%;
+    right: 30%;
+    background: center no-repeat url(../public/img/covidblur.png);
+}
+
+
+
+/*=============================================
+=                FLOTA SECTION                =
+=============================================*/
+
+.slider_layout{
+    background-color: aquamarine;
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+/* card component */
+
+.flotaCard{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    position: relative;
+    width: 100%;
+    max-width: 372px;
+    height: 530px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: box-shadow .25s ease;
+    
+}
+.flotaCard:hover{
+    box-shadow: rgba(71, 71, 71, 0.18) 0px 15px 28px -5px, rgba(0, 0, 0, 0.1) 0px 8px 16px -8px;
+}
+
+.flotaCard_head{
+    display: flex;
+    background-color: #000;
+    width: 100%;
+    height: 235px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.flotaCard_body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flotaCard_body_info{
+    width: 100%;
+    height: auto;
+}
+.flotaCard_body_prices{
+    border-top: 1px solid #dfdfdf;
+    padding: 8px 0 0 0;
+}
+
+.flotaCard_title{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.flotaCard_subtitle{
+    font-size: 15px;
+    color: #ccc;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.flotaCard_subtitle::after{
+    content: '';
+    display: block;
+    width: 90px;
+    height: 2px;
+    margin: 0 auto;
+    margin: 12px auto;
+    background-color: var(--primary);
+}
+
+.flotaCard_desc {
+    font-size: 15px;
+    color: #737373;
+}
+
+.label_price {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ccc;
+}
+.flotaPrice {
+    text-align: start;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.flotaPrice span{
+    letter-spacing: -2px;
+}
+.menu_prices{
+    padding: 4px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flotaCard_btn{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #2DD753;
+    border-radius: 6px;
+    padding: 10px 14px;
+    background-color: rgba(45, 215, 82, 0.2);
+    transition: background-color .25s ease;
+}
+.flotaCard_btn:hover{
+    background-color: #2DD753;
+    color: #fff;
+}
+.flotaCard_btn:active{
+    background-color: #29b147;
+    color: #fff;
+}
+
+.wsp_icon_floatCard{
+    width: 20px;
+    height: 20px;
+}
+.wsp_icon_floatCard svg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.boxi{
+    display: flex !important;
+    width: 200px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+
+.boxi_content{
+    display: flex;
+    width: calc(100% -  15px);
+    height: calc(100% - 15px);
+    background-color: #29b147;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
