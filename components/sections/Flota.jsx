@@ -16,8 +16,70 @@ import 'swiper/css/scrollbar';
 
 const Flota = () => {
 
+    const generarId = () => {
+        const random = Math.random().toString(36).substring(2);
+        const fecha = Date.now().toString(36);
+        return(random + fecha);
+    }
 
-
+    const productos = [
+        {
+            id: generarId(),
+            name: 'Auto particular 1',
+            subtitle: '4 pasajeros (passengers)',
+            description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
+            price: '70.00',
+            enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        },
+        {
+            id: generarId(),
+            name: 'Auto particular 2',
+            subtitle: '4 pasajeros (passengers)',
+            description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
+            price: '70.00',
+            enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        },
+        {
+            id: generarId(),
+            name: 'Auto particular 3',
+            subtitle: '4 pasajeros (passengers)',
+            description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
+            price: '70.00',
+            enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        },
+        {
+            id: generarId(),
+            name: 'Auto particular 4',
+            subtitle: '4 pasajeros (passengers)',
+            description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
+            price: '70.00',
+            enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        },
+        {
+            id: generarId(),
+            name: 'Auto particular 5',
+            subtitle: '4 pasajeros (passengers)',
+            description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
+            price: '70.00',
+            enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        },
+        {
+            id: generarId(),
+            name: 'Auto particular 6',
+            subtitle: '4 pasajeros (passengers)',
+            description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
+            price: '70.00',
+            enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        },
+        {
+            id: generarId(),
+            name: 'Auto particular 7',
+            subtitle: '4 pasajeros (passengers)',
+            description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
+            price: '70.00',
+            enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        },
+    ]
 
     return (
         <section className="section">
@@ -29,13 +91,44 @@ const Flota = () => {
                 <div className="slider_layout">
 
                     <Swiper
+                        // className="taxiSeguro_swiper"
+                        
                         loop={true}
+                        slidesPerView={1}
+                        centeredSlides={true}
+                        breakpoints={{
+                            820: {
+                                slidesPerView: 2,
+                            },
+                            1100: {
+                                slidesPerView: 3,
+                            },
+                            1400: {
+                                slidesPerView: 4,
+                            },
+                            1830: {
+                                slidesPerView: 5,
+                            },
+                            2400: {
+                                slidesPerView: 6,
+                            },
+                        }}
                     >
-                        <SwiperSlide>Slide 1</SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
-                        <SwiperSlide>Slide 3</SwiperSlide>
-                        <SwiperSlide>Slide 4</SwiperSlide>
-                        <SwiperSlide>Slide 5</SwiperSlide>
+                        {
+                            productos.map( producto => (
+                                <SwiperSlide key={producto.id}>
+                                    <div className="card_container">
+                                        <ProductCard
+                                            name={producto.name}
+                                            subtitle = {producto.subtitle}
+                                            description = {producto.description}
+                                            price = {producto.price}
+                                            enlace = {producto.enlace}
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            ))
+                        }
                     </Swiper>
                     
                 </div>

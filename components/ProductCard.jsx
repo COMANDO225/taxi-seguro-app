@@ -38,7 +38,6 @@ ProductCard.defaultProps = {
     description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
     price: '70.00',
     enlace: 'https://www.facebook.com/anderson.almeydatorres',
-    
 }
 
 export default ProductCard;

@@ -473,7 +473,7 @@ button{
 =============================================*/
 
 .slider_layout{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     /* display: flex;
     justify-content: center; */
 }
@@ -605,21 +605,25 @@ button{
     display: flex;
 }
 
-.boxi{
-    display: flex !important;
-    width: 200px;
-    height: 350px;
+.card_container{
+    display: flex;
+    max-width: 400px;
+    height: 610px;
     justify-content: center;
     align-items: center;
-    background-color: purple;
+    margin: auto;
+    /* background-color: rgb(228, 228, 228); */
 }
 
 .boxi_content{
-    display: flex;
-    width: calc(100% -  15px);
-    height: calc(100% - 15px);
-    background-color: #29b147;
+    width: 100%;
+    max-width: 372px;
+    height: 530px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #ffffff;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: auto;
+    box-shadow: rgba(71, 71, 71, 0.18) 0px 15px 28px -5px, rgba(0, 0, 0, 0.1) 0px 8px 16px -8px;
 }
