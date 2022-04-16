@@ -12,7 +12,7 @@ import TaxiIcon from '../icons/TaxiIcon'
 
 const Servicios = () => {
     return (
-        <section className="section bg_black">
+        <section className="section bg_black" id="servicios">
             <div className="wrapper">
                 <SectionHeader subtitle={'Nuestros'} theme={'black'}>Servicios</SectionHeader>
                 <div className="section_body">

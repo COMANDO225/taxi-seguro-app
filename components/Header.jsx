@@ -1,27 +1,13 @@
-import dynamic from 'next/dynamic';
+// componentes
 import styles from '../styles/Header.module.css'
 import Button from './Button';
 import Image from 'next/image'
 import DropIcon from './icons/DropIcon';
 
-
-// dynamicos
-const Navbar = dynamic(
-    () => import('./Navbar'),
-    {ssr:false}
-)
-
-const Header = ({setBreakSm, setBreakMd, setBreakLg, setBreakXl, setNosotrosBreak}) => {
+const Header = () => {
     return (
-        <header className={styles.header}>
+        <header className={styles.header} id='hero'>
             <div className={styles.suelo}></div>
-            <Navbar
-                setBreakSm= {setBreakSm}
-                setBreakMd = {setBreakMd}
-                setBreakLg = {setBreakLg}
-                setBreakXl = {setBreakXl}
-                setNosotrosBreak = {setNosotrosBreak}
-            />
 
             <div className={styles.hero_banner}>
                 <div className={`${styles.hero_container}`}>

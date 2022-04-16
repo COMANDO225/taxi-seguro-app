@@ -5,7 +5,7 @@ const Nosotros = ({nosotrosBreak}) => {
 
 
     return (
-        <section className="section">
+        <section className="section" id="nosotros">
             <div className="wrapper">
                 <div className="dual_grid">
                     <div className="nosotros_img_container">

@@ -1,11 +1,10 @@
-
-
 // react swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // componentes
 import ProductCard from "../ProductCard";
 import SectionHeader from "../SectionHeader";
+// import { autos } from '../../data/autosData'
 
 // estilos swiper
 import 'swiper/css';
@@ -14,15 +13,18 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
+
+
 const Flota = () => {
+
 
     const generarId = () => {
         const random = Math.random().toString(36).substring(2);
         const fecha = Date.now().toString(36);
         return(random + fecha);
     }
-
-    const productos = [
+    
+    const autos = [
         {
             id: generarId(),
             name: 'Auto particular 1',
@@ -82,7 +84,7 @@ const Flota = () => {
     ]
 
     return (
-        <section className="section">
+        <section className="section flota" id='flota'>
             <div className="wrapper">
                 <SectionHeader subtitle={'presentamos'}>nuestra flota</SectionHeader>
                 <p className="section_parraf">En Taxi Seguro tenemos una amplia gama de vehiculos para brindarte una buena experiencia en calidad de servicio, seguridad, protocolos de bioseguridad y más.</p>
@@ -115,7 +117,7 @@ const Flota = () => {
                         }}
                     >
                         {
-                            productos.map( producto => (
+                            autos.map( producto => (
                                 <SwiperSlide key={producto.id}>
                                     <div className="card_container">
                                         <ProductCard
