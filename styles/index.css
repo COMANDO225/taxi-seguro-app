@@ -115,46 +115,33 @@ button{
     /* box-shadow: transparent; */
 }
 
-/* button de hamburguesa */
-
-.taxi_burger{
-    display: flex;
+/* enlaces - navbar */
+.navbar {
+    width: 100%;
+    display: grid;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    justify-content: center;
-    position: relative;
-    user-select: none;
-}
-.linea{
-    position: absolute;
-    width: 25px;
-    border-radius: 2px;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0));
+    z-index: 99;
     transition: all .25s ease;
 }
-.l_sup{
-    transform: translateY(-8px);
+.navbar.active .navbar_wrapper{
+    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+    z-index: 10;
 }
-.l_inf{
-    transform: translateY(8px);
+.navbar.active{
+    background: rgb(255, 255, 255);
 }
-
-.taxi_burger.active .l_sup{
-    transform: translateY(0) rotate(45deg);
+.navbar_content {
+    width: 95%;
+    max-width: var(--width-layout);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
-.taxi_burger.active .l_cen{
-    width: 0;
-}
-.taxi_burger.active .l_inf{
-    transform: translateY(0) rotate(-45deg);
-}
-
-
-
-/* enlaces - navbar */
 .nav_items {
     display: flex;
     align-items: center;
@@ -164,20 +151,23 @@ button{
 .nav_items.column{
     width: 100%;
     display: grid;
-    /* background-color: rgb(153, 181, 172); */
-    padding: 0 0 10px 0;
+    padding: 2px 0 10px 0;
 }
 .enlace{
     display: flex;
     align-items: center;
     position: relative;
     text-transform: uppercase;
-    color: #fff;
+    color: white;
+    font-weight: 500;
     padding: 10px 12px;
     height: 100%;
     font-size: 14px;
     cursor: pointer;
     z-index: 1;
+}
+.navbar.active .enlace{
+    color: var(--textColor);
 }
 .column .enlace{
     text-align: center;
@@ -194,6 +184,9 @@ button{
 }
 .enlace:hover{
     background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0));
+}
+.navbar.active .enlace:hover{
+    background-color: #f8f8f8;
 }
 .enlace::after{
     content: '';
@@ -215,30 +208,59 @@ button{
 .enlace:nth-last-of-type(2){
     margin-right: 10px;
 }
+/* button de hamburguesa */
 
-/* contenedores */
-
-
-.navbar {
-    width: 100%;
-    display: grid;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    background-color: rgb(5, 5, 5);
-    /* color: #000; */
-    z-index: 99;
-}
-.navbar_content {
-    width: 95%;
-    max-width: var(--width-layout);
-    /* background-color: aqua; */
-    height: 60px;
+.taxi_burger{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+    user-select: none;
 }
+.linea{
+    position: absolute;
+    width: 25px;
+    border-radius: 2px;
+    height: 2px;
+    background-color: white;
+    transition: transform .25s ease;
+}
+.navbar.active .linea{
+    background-color: var(--textColor);
+}
+.l_sup{
+    transform: translateY(-8px);
+}
+.l_inf{
+    transform: translateY(8px);
+}
+
+.taxi_burger.active .l_sup{
+    transform: translateY(0) rotate(45deg);
+}
+.taxi_burger.active .l_cen{
+    width: 0;
+}
+.taxi_burger.active .l_inf{
+    transform: translateY(0) rotate(-45deg);
+}
+
+/* navigation Bar */
+
+.navigationBar{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 6px, rgba(0, 0, 0, 0.23) 0px 1px 6px;
+    height: 80px;
+    border-radius: 4px 4px 0 0;
+}
+
 
 /* Section globals styles */
 
@@ -356,7 +378,7 @@ button{
     display: grid;
     width: 100%;
     justify-content: space-between;
-    gap: 30px;
+    gap: 1rem;
 }
 
 /* item info card */

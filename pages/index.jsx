@@ -11,6 +11,7 @@ import Covid from '../components/sections/Covid'
 import Navbar from '../components/Navbar'
 import useMediaQuery from '../hooks/useMediaQuery';
 import Template from '../components/Template';
+import NavigationBar from '../components/NavigationBar';
 
 const Index = () => {
     
@@ -24,44 +25,50 @@ const Index = () => {
     const nosotrosBreak = useMediaQuery('(min-width: 820px)')
 
     //* ========== Navbar Estados ========== *//
+    // estado del navbar
+    const [navbar, setNavbar] = useState(false);
     // monstrar el icono de menu del navbar
-    const mostrarMenuIcon = useMediaQuery('(min-width: 780px)')
+    const mostrarMenuIcon = useMediaQuery('(min-width: 820px)')
     // Estado del menu del navbar
     const [menuIcon, setMenuIcon] = useState(false);
-
-
     // activar el menu
     const menuActive = () => {
         setMenuIcon(!menuIcon)
     }
-
-
     useEffect(() => {
         mostrarMenuIcon && setMenuIcon(false)
     }, [mostrarMenuIcon , setMenuIcon])
-
     useEffect(() => {
-        if(menuIcon){
-            document.body.style.overflow = 'hidden'
-        }else{
-            document.body.removeAttribute('style')
-        }
-    }, [menuIcon]);
-
+        menuIcon 
+        ? 
+        document.body.style.overflow = 'hidden' 
+        : 
+        document.body.removeAttribute('style')
+    }, [menuIcon])
     const menuDesactive = () => {
         setMenuIcon(false)
     }
+
+    // cambiar estado del nav segun el scroll
+    const changeBackground = () => {
+        window.scrollY > 0 ? setNavbar(true) : setNavbar(false)
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground)
+    },[])
     
     
 
     return (
         <Template>
             <Navbar
+                navbar = {navbar}
                 mostrarMenuIcon = {mostrarMenuIcon}
                 menuIcon = {menuIcon}
                 menuActive = {menuActive}
                 menuDesactive = {menuDesactive}
             />
+            <NavigationBar/>
             <Header/>
             {
                 menuIcon ?

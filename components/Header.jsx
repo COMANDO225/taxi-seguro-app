@@ -1,8 +1,10 @@
+
 // componentes
 import styles from '../styles/Header.module.css'
 import Button from './Button';
 import Image from 'next/image'
 import DropIcon from './icons/DropIcon';
+import {Link as LinS} from 'react-scroll'
 
 const Header = () => {
     return (
@@ -10,12 +12,15 @@ const Header = () => {
             <div className={styles.suelo}></div>
 
             <div className={styles.hero_banner}>
-                <div className={`${styles.hero_container}`}>
+                <div className={styles.hero_container}>
                     <h2 className={styles.hero_subtitle}>Bienvenido a tu</h2>
                     <h1 className={styles.hero_title}>Taxi <span>Seguro</span></h1>
                     <p className={styles.hero_parraf}>Brindamos el servicio de transporte más seguro y completo
                     de Lima.</p>
-                    <Button type={'primary'}>916 019 563</Button>
+                    <div className={styles.hero_buttons}>
+                        <Button type={'primary'}>916 019 563</Button>
+                        <LinS to='flota' spy={true} offset={-60} smooth={true} className={'taxi_btn btn-shadow'} duration={380}>ver flota</LinS>
+                    </div>
                 </div>
                 <div className={styles.hero_imagen}>
                     
