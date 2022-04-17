@@ -3,7 +3,6 @@ const DropIcon = (props) => {
         <svg
     width={145}
     height={201}
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
     >

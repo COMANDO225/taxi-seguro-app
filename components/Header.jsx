@@ -18,7 +18,7 @@ const Header = () => {
                     <p className={styles.hero_parraf}>Brindamos el servicio de transporte más seguro y completo
                     de Lima.</p>
                     <div className={styles.hero_buttons}>
-                        <Button type={'primary'}>916 019 563</Button>
+                        <Button enlace={'tel:+51916019563'} notarget type={'primary'}>+51 916 019 563</Button>
                         <LinS to='flota' spy={true} offset={-60} smooth={true} className={'taxi_btn btn-shadow'} duration={380}>ver flota</LinS>
                     </div>
                 </div>

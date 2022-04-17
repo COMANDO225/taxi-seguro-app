@@ -17,7 +17,7 @@ const Navigations = ({mode, menuDesactive}) => {
             <LinS onClick={menuDesactive} to='covid' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>covid-19</LinS>
             <a className={'enlace'} href="">contacto</a>
             <div className={'center-btn'}>
-                <Button type={'primary'}>reservar</Button>
+                <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
             </div>
         </div>
     );

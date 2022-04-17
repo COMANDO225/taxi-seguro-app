@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
 :root{
     --primary: #FFAE00;
     --textColor: #252525;
@@ -36,6 +34,12 @@ i {
 }
 button{
     border: none;
+}
+p{
+    font-size: 14px;
+}
+h2{
+    font-size: 22px;
 }
 
 
@@ -122,7 +126,7 @@ button{
     align-items: center;
     position: fixed;
     top: 0;
-    background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0));
+    background: transparent;
     z-index: 99;
     transition: all .25s ease;
 }
@@ -151,7 +155,7 @@ button{
 .nav_items.column{
     width: 100%;
     display: grid;
-    padding: 2px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 .enlace{
     display: flex;
@@ -226,7 +230,7 @@ button{
     border-radius: 2px;
     height: 2px;
     background-color: white;
-    transition: transform .25s ease;
+    transition: all .25s ease;
 }
 .navbar.active .linea{
     background-color: var(--textColor);
@@ -250,15 +254,29 @@ button{
 
 /* navigation Bar */
 
-.navigationBar{
+.wspButton{
     position: fixed;
     z-index: 100;
-    bottom: 0;
+    bottom: 1rem;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconContainer{
     width: 100%;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 6px, rgba(0, 0, 0, 0.23) 0px 1px 6px;
-    height: 80px;
-    border-radius: 4px 4px 0 0;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.wspButton .iconContainer{
+    transform: scale(1);
+    transition: transform .45s ease;
+}
+.wspButton:hover .iconContainer{
+    transform: scale(.86);
 }
 
 
@@ -266,7 +284,7 @@ button{
 
 
 .section{
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .wrapper{
     width: 95%;
@@ -285,7 +303,7 @@ button{
     align-items: center;
     gap: 20px;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 .section_subtitle.start{
     justify-content: start;
@@ -293,14 +311,12 @@ button{
 .section_subtitle.end{
     justify-content: end;
 }
-
 .section_subtitle.start .line_r{
     display: none;
 }
 .section_subtitle.end .line_l{
     display: none;
 }
-
 .section_subtitle span{
     display: block;
     width: 40px;
@@ -309,15 +325,14 @@ button{
 }
 .section_subtitle h2{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(189, 189, 189);
 }
-
 .section_title{
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    line-height: 3.35rem;
+    line-height: 2.35rem;
 }
 .section_title span{
     color: var(--primary);
@@ -329,12 +344,27 @@ button{
     text-align: end;
 }
 .section_parraf{
-    font-size: 17px;
     color: #737373;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+@media(min-width: 768px){
+    .section_subtitle{
+        margin-bottom: 1rem;
+    }
+    .section_subtitle h2{
+        font-size: 18px;
+    }
+    .section_title{
+        font-size: 3rem;
+        line-height: 3.35rem;
+    }
+    .section_parraf{
+        margin-top: 50px;
+    }
 }
 
 /*----------  Section nosotros  ----------*/
@@ -355,6 +385,37 @@ button{
 .nostros_parraf{
     margin: 30px 0 0 0;
     text-align: center;
+}
+
+.conocenos_container h2{
+    margin: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-size: 15px; */
+    color: rgb(189, 189, 189);
+}
+.nosotrosSwiper{
+    /* background-color: #2DD753; */
+    height: 350px;
+}
+.SliderContainer{
+    position: relative;
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-bullet{
+    transition: all .25s ease !important;
+}
+.swiper-pagination-bullet-active{
+    transition: all .25s ease !important;
+    width: 24px !important;
+    border-radius: 8px !important;
+    background: var(--primary) !important;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: var(--primary) !important;
+    
 }
 
 @media(min-width: 820px){
@@ -398,7 +459,7 @@ button{
 .info_card.card{
     background-color: #fff;
     color: var(--textColor);
-    padding: 2rem 18px;
+    padding: 1rem;
     min-height: 160px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -505,13 +566,6 @@ button{
 /*=============================================
 =                FLOTA SECTION                =
 =============================================*/
-
-.slider_layout{
-    /* background-color: aquamarine; */
-    /* display: flex;
-    justify-content: center; */
-}
-
 
 /* card component */
 
@@ -656,7 +710,7 @@ button{
 }
 
 .section.flota .section_body{
-    margin: 1rem 0 1rem 0;
+    margin: 0;
 }
 
 
@@ -664,7 +718,7 @@ button{
 
 @media(min-width: 768px){
     .section{
-        padding: 150px 0;
+        padding: 120px 0;
     }
     .servicios_grid{
         grid-template-columns: repeat(2, 1fr);
@@ -677,5 +731,9 @@ button{
     }
     .section.flota .section_body{
         margin: 3rem 0 1rem 0;
+    }
+    .wspButton{
+        width: 60px;
+        height: 60px;
     }
 }

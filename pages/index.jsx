@@ -11,7 +11,7 @@ import Covid from '../components/sections/Covid'
 import Navbar from '../components/Navbar'
 import useMediaQuery from '../hooks/useMediaQuery';
 import Template from '../components/Template';
-import NavigationBar from '../components/NavigationBar';
+import WspButton from '../components/WspButton';
 
 const Index = () => {
     
@@ -68,7 +68,7 @@ const Index = () => {
                 menuActive = {menuActive}
                 menuDesactive = {menuDesactive}
             />
-            <NavigationBar/>
+            <WspButton/>
             <Header/>
             {
                 menuIcon ?

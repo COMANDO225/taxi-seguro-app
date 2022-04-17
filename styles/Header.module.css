@@ -1,12 +1,12 @@
 .header{
     width: 100%;
     height: 100%;
-    min-height: 700px;
     background-color: black;
     color: var(--textWhite);
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    padding: 100px 0 0 0;
 }
 .suelo{
     width: 100%;
@@ -17,7 +17,6 @@
 }
 
 .hero_banner{
-    padding-top: 150px;
     display: flex;
     width: 95%;
     height: 100%;
@@ -31,12 +30,13 @@
     text-align: center;
 }
 .hero_subtitle{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .hero_title{
     font-size: 4.6rem;
+    font-size: 3.4rem;
     font-family: 'Lobster', cursive;
     font-weight: 100;
     margin: 5px 0 26px 0;
@@ -46,7 +46,7 @@
 }
 
 .hero_parraf{
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .hero_imagen{
@@ -58,10 +58,12 @@
 }
 .timeService_content{
     display: none;
+    /* background-color: aqua; */
     justify-content: center;
+    align-items: center;
+    transform: translate(-20px, 20px) scale(.82);
 }
 .timeService_content svg{
-    transform: translate(-20px, 25px);
 }
 .hero_imagen_content{
     width: 100%;
@@ -80,8 +82,10 @@
         display: grid;
         grid-template-columns: 45fr 55fr;
         height: 700px;
+        height: 600px;
     }
     .hero_container{
+        transform: translateY(-35px);
         display: flex;
         flex-direction: column;
         text-align: start;
@@ -90,6 +94,7 @@
     }
     .suelo{
         height: 100px;
+        height: calc(70px + 1.35vw);
     }
     .hero_container a{
         margin: 0;
@@ -99,5 +104,12 @@
     }
     .timeService_content{
         display: flex;
+    }
+    .hero_title{
+        font-size: 4.6rem;
+        margin: 5px 0 30px 0;
+    }
+    .hero_parraf{
+        font-size: 17px;
     }
 }

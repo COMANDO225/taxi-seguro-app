@@ -62,3 +62,56 @@ export const autos = [
         enlace: 'https://www.facebook.com/anderson.almeydatorres',
     },
 ]
+
+export const choferes = [
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer1.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer2.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer3.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer4.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer5.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer6.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer7.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer8.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer9.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: '/img/choferes/chofer10.png'
+    },
+]
