@@ -411,12 +411,12 @@ h2{
     transition: all .25s ease !important;
     width: 24px !important;
     border-radius: 8px !important;
-    background: var(--primary) !important;
+    /* background: var(--primary) !important; */
 }
-.swiper-button-prev, .swiper-button-next{
+/* .swiper-button-prev, .swiper-button-next{
     color: var(--primary) !important;
     
-}
+} */
 
 @media(min-width: 820px){
     .dual_grid{
@@ -522,7 +522,7 @@ h2{
     position: absolute;
     width: 410px;
     height: 410px;
-    background: center no-repeat url(../public/img/shield.png);
+    background: center no-repeat url(../public/img/covid/shield.png);
     background-size: contain;
 }
 
@@ -532,7 +532,7 @@ h2{
     height: 220px;
     background-color: peru;
     transform: translate(-290px, 0px);
-    background: center no-repeat url(../public/img/covid.png);
+    background: center no-repeat url(../public/img/covid/covid.png);
     background-size: contain;
 }
 
@@ -550,7 +550,7 @@ h2{
     transform: none;
     top: 10%;
     left: 35%;
-    background: center no-repeat url(../public/img/covidblur.png);
+    background: center no-repeat url(../public/img/covid/covidblur.png);
 }
 .blur2{
     width: 100px;
@@ -558,7 +558,7 @@ h2{
     transform: none;
     top: 21%;
     right: 30%;
-    background: center no-repeat url(../public/img/covidblur.png);
+    background: center no-repeat url(../public/img/covid/covidblur.png);
 }
 
 

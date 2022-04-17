@@ -5,17 +5,22 @@ import { choferes } from '../data'
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/lazy";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination, Navigation } from "swiper";
+import { Lazy, Pagination, Navigation } from "swiper";
 
 
 const CarouselNosotros = () => {
     return (
         <Swiper
+            style={{
+                "--swiper-navigation-color": "var(--primary)",
+                "--swiper-pagination-color": "var(--primary)",
+            }}
+            lazy={true}
             slidesPerView={1}
-            // slidesPerGroup={3}
             spaceBetween={30}
             pagination={{
                 clickable: true,
@@ -32,7 +37,7 @@ const CarouselNosotros = () => {
                 }
             }}
             className={'nosotrosSwiper'}
-            modules={[Pagination, Navigation]}
+            modules={[Lazy, Pagination, Navigation]}
         >
             {
                 choferes.map( chofer => (
