@@ -1,6 +1,10 @@
 import styles from '../styles/Navbar.module.css'
 import Navigations from './Navigations';
 
+import LogoTaxi from '../components/icons/LogoTaxi'
+import Link from 'next/link'
+
+
 
 const Navbar = ({navbar, mostrarMenuIcon, menuIcon, menuActive, menuDesactive}) => {
 
@@ -9,8 +13,16 @@ const Navbar = ({navbar, mostrarMenuIcon, menuIcon, menuActive, menuDesactive}) 
         <nav className={navbar ? 'navbar active' : 'navbar'}>
             <div className="navbar_wrapper">
                 <div className={'navbar_content'}>
-                    <div className={styles.logo_conatiner}>
-                        <h2>Logo</h2>
+                    <div className={styles.logo_container}>
+                        <Link href="/">
+                            <a className={styles.taxiLogo}>
+                            <LogoTaxi
+                                fill={navbar ? '#000' : '#fff'}
+                                width = {100}
+                                height = {40}
+                            />
+                            </a>
+                        </Link>
                     </div>
                     {mostrarMenuIcon 
                         ?

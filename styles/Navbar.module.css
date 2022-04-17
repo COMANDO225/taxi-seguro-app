@@ -1,1 +1,9 @@
+.logo_container{
+    height: 100%;
+}
 
+.taxiLogo{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}

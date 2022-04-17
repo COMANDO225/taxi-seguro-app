@@ -8,9 +8,9 @@ import { autos } from '../../data'
 
 // estilos swiper
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+
+import { Pagination } from "swiper";
 
 
 
@@ -21,18 +21,23 @@ const Flota = () => {
     return (
         <section className="section flota" id='flota'>
             <div className="wrapper">
-                <SectionHeader subtitle={'presentamos'}>nuestra flota</SectionHeader>
+                <SectionHeader subtitle={'presentamos'}>Nuestra Flota</SectionHeader>
                 <p className="section_parraf">En Taxi Seguro tenemos una amplia gama de vehiculos para brindarte una buena experiencia en calidad de servicio, seguridad, protocolos de bioseguridad y más.</p>
             </div>
             <div className="section_body">
                 <div className="slider_layout">
-
                     <Swiper
-                        // className="taxiSeguro_swiper"
-                        
+                        className='flotaSwiper'
+                        style={{
+                            "--swiper-pagination-color": "var(--primary)",
+                        }}
                         loop={true}
                         slidesPerView={1}
                         centeredSlides={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[Pagination]}
                         breakpoints={{
                             820: {
                                 slidesPerView: 2,

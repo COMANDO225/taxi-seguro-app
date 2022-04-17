@@ -9,6 +9,17 @@ import {Link as LinS} from 'react-scroll'
 const Header = () => {
     return (
         <header className={styles.header} id='hero'>
+            <div className={styles.headerBackground}>
+                <Image
+                    priority
+                    draggable={'false'}
+                    layout='fill'
+                    objectFit='cover'
+                    objectPosition={'left'}
+                    src={'/img/headerbg.jpg'}
+                    alt=""
+                />
+            </div>
             <div className={styles.suelo}></div>
 
             <div className={styles.hero_banner}>
@@ -30,7 +41,7 @@ const Header = () => {
                         </div>
                         <Image
                             draggable={'false'}
-                            priority={'low'}
+                            priority
                             width={800}
                             height={390}
                             layout='responsive'

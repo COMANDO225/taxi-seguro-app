@@ -14,7 +14,7 @@ const Covid = () => {
     return (
         <section className="section covid" id="covid">
             <div className="wrapper">
-                <SectionHeader subtitle={'covid 19'}>protocolos <span>bioseguridad</span></SectionHeader>
+                <SectionHeader subtitle={'covid 19'}>Protocolos <span>Bioseguridad</span></SectionHeader>
                 <p className="section_parraf">Tú eres nuestra prioridad es por eso que para esta situación nos hemos adecuado exitosamente a las normas de medida sanitaria para la prevención de covid - 19.</p>
                 <div className="section_body">
                     <div className="covid_layout">

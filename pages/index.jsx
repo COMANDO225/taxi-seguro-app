@@ -12,6 +12,7 @@ import Navbar from '../components/Navbar'
 import useMediaQuery from '../hooks/useMediaQuery';
 import Template from '../components/Template';
 import WspButton from '../components/WspButton';
+import Contacto from '../components/sections/Contacto';
 
 const Index = () => {
     
@@ -80,6 +81,7 @@ const Index = () => {
                 <Servicios/>
                 <Flota/>
                 <Covid/>
+                <Contacto/>
             </Main>
         </Template>
     );

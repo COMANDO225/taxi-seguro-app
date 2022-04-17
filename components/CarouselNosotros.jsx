@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Lazy, Pagination, Navigation } from "swiper";
+import LoadingContainer from "./LoadingContainer";
 
 
 const CarouselNosotros = () => {
@@ -43,13 +44,15 @@ const CarouselNosotros = () => {
                 choferes.map( chofer => (
                     <SwiperSlide key={chofer.id}> 
                         <div className="SliderContainer">
-                            <Image
-                                blurDataURL="blur"
-                                layout="fill"
-                                objectFit="cover"
-                                src={chofer.src}
-                                alt={`imagen de chofer`}
-                            />
+                            <LoadingContainer>
+                                <Image
+                                    blurDataURL="blur"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    src={chofer.src}
+                                    alt={`imagen de chofer`}
+                                />
+                            </LoadingContainer>
                         </div>
                     </SwiperSlide>
                 ))
