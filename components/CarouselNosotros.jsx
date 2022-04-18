@@ -9,7 +9,7 @@ import "swiper/css/lazy";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Lazy, Pagination, Navigation } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import LoadingContainer from "./LoadingContainer";
 
 
@@ -20,7 +20,6 @@ const CarouselNosotros = () => {
                 "--swiper-navigation-color": "var(--primary)",
                 "--swiper-pagination-color": "var(--primary)",
             }}
-            lazy={true}
             slidesPerView={1}
             spaceBetween={30}
             pagination={{
@@ -38,7 +37,7 @@ const CarouselNosotros = () => {
                 }
             }}
             className={'nosotrosSwiper'}
-            modules={[Lazy, Pagination, Navigation]}
+            modules={[ Pagination, Navigation]}
         >
             {
                 choferes.map( chofer => (
