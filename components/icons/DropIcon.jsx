@@ -4,6 +4,7 @@ const DropIcon = (props) => {
     width={145}
     height={201}
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 144.69 200.11"
     {...props}
     >
     <g clipPath="url(#a)">

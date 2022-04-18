@@ -10,9 +10,23 @@ import MatrimonialIcon from '../icons/MatrimonialIcon'
 import TimeIcon from '../icons/TimeIcon'
 import TaxiIcon from '../icons/TaxiIcon'
 
+import Image from 'next/image'
+
+
 const Servicios = () => {
     return (
-        <section className="section bg_black" id="servicios">
+        <section className="section bg_black servicios" id="servicios">
+            <div className="serviciosBackground">
+                <Image
+                    priority
+                    draggable={'false'}
+                    layout='fill'
+                    objectFit='cover'
+                    objectPosition={'top'}
+                    src={'/img/serviciosbg.jpg'}
+                    alt="background seccion servicios"
+                />
+            </div>
             <div className="wrapper">
                 <SectionHeader subtitle={'Nuestros'} theme={'black'}>Servicios</SectionHeader>
                 <div className="section_body">

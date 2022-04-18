@@ -7,6 +7,26 @@
     --headerBgColor: #fff;
 
     --width-layout: 1400px;
+
+    --byAlmeydacolor: linear-gradient(90deg, 
+    #0058d3,
+    #1276fe,
+    #0099ff, 
+    #00ccff,
+    #0099ff, 
+    #1276fe, 
+    #0058d3);
+    --byAlmeydacolor: linear-gradient(90deg, 
+    #c87c00,
+    #ffa20d,
+    #ffa20d,
+    #ffb414, 
+    #ffc352,
+    #ffb414, 
+    #ffa20d, 
+    #ffa20d,
+    #c87c00);
+	--almeydaText: #fff;
 }
 *,
 *::after,
@@ -72,37 +92,25 @@ h2{
 /* buttons */
 
 .taxi_btn{
+    display: flex;
+    align-items: center;
     position: relative;
     width: fit-content;
     color: #000;
     background-color: var(--primary);
     background-color: rgba(200, 200, 200, 0.45);
     border-radius: 6px;
+    height: 44px;
+    width: fit-content;
     text-transform: uppercase;
     font-weight: 500;
-    padding: 8px 16px;
+    padding: 0px 18px;
     cursor: pointer;
     transition: all ease .2s;
-    /* margin: 0 auto; */
 }
 .taxi_btn:hover{
     background-color: rgba(200, 200, 200, .65);
 }
-
-.taxi_btn.btn-shadow{
-    color: var(--primary);
-    border: 2px solid var(--primary);
-    background: transparent;
-}
-.taxi_btn.btn-shadow:hover{
-    background-color: rgba(255, 174, 0, 0.2);
-}
-.taxi_btn.btn-shadow:active{
-    border: 2px solid #d18904;
-    background: #d18904;
-    color: #fafafa;
-}
-
 .btn-primary{
     border: 2px solid var(--primary);
     background: var(--primary);
@@ -114,10 +122,38 @@ h2{
     box-shadow: rgba(249, 179, 50, 0.5) 0px 6px 12px -2px, rgba(249, 179, 50, 1) 0px 3px 7px -3px;
 }
 .btn-primary:active{
-    border: 2px solid #d18904;
-    background: #d18904;
-    /* box-shadow: transparent; */
+    border: 2px solid #e29403;
+    background: #e29403;
 }
+.btn-primary:hover:active{
+    border: 2px solid #e29403;
+    background: #e29403;
+    box-shadow: none;
+}
+.taxi_btn.lg{
+    width: fit-content;
+    padding: 0 26px;
+    height: 54px;
+    font-size: 17px;
+}
+
+
+
+.taxi_btn.btn-shadow{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    background: transparent;
+}
+.taxi_btn.btn-shadow:hover{
+    background-color: rgba(255, 174, 0, 0.2);
+}
+.taxi_btn.btn-shadow:active{
+    border: 2px solid #e29403;
+    background: #e29403;
+    color: #fafafa;
+}
+
+
 
 /* enlaces - navbar */
 .navbar {
@@ -265,11 +301,27 @@ h2{
     justify-content: center;
     align-items: center;
 }
+@keyframes onda-vital {
+    0% {
+        box-shadow: 0 0 0 0 #2DD753, 0 0 0 0 rgba(45, 215, 82, 0.10)
+    }
+
+    80% {
+        box-shadow: 0 0 0 16px rgba(255, 255, 255, 0), 0 0 0 35px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0), 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
 .iconContainer{
     width: 100%;
     height: 100%;
     background-color: #fff;
     border-radius: 50%;
+    animation-name: onda-vital;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 .wspButton .iconContainer{
     transform: scale(1);
@@ -283,7 +335,8 @@ h2{
 /* Section globals styles */
 
 
-.section{
+
+.section {
     padding: 70px 0;
 }
 .wrapper{
@@ -349,6 +402,17 @@ h2{
     margin: 0 auto;
     margin-top: 30px;
 }
+.section_parraf span{
+    color: var(--primary);
+}
+.text_start{
+    text-align: left;
+    margin: 0;
+    margin-top: 30px;
+}
+.section_parraf.contacto{
+    font-size: 16px;
+}
 
 @media(min-width: 768px){
     .section_subtitle{
@@ -363,6 +427,9 @@ h2{
     }
     .section_parraf{
         margin-top: 50px;
+    }
+    .section_parraf.contacto{
+        font-size: 18px;
     }
 }
 
@@ -437,12 +504,7 @@ h2{
     transition: all .25s ease !important;
     width: 24px !important;
     border-radius: 8px !important;
-    /* background: var(--primary) !important; */
 }
-/* .swiper-button-prev, .swiper-button-next{
-    color: var(--primary) !important;
-    
-} */
 
 @media(min-width: 820px){
     .dual_grid{
@@ -460,6 +522,31 @@ h2{
 /*=============================================
 =                SERVICIO SECTION             =
 =============================================*/
+.section.servicios{
+    position: relative;
+}
+.serviciosBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.section.servicios .wrapper{
+    position: relative;
+    z-index: 1;
+}
+.serviciosBackground::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgb(0,0,0);
+    opacity: .25;
+}
 
 .servicios_grid{
     display: grid;
@@ -740,6 +827,31 @@ h2{
 
 .section.flota .section_body{
     margin: 0;
+}
+
+
+.section.contacto .section_body {
+    margin: 4rem 0 0 0;
+}
+
+/* button box */
+.btn-box{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform .25s ease;
+}
+.btn-box:hover{
+    transform: translateY(-6px);
+}
+.btn-box svg{
+    width: 24px;
+    height: 24px;
 }
 
 

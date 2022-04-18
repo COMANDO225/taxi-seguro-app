@@ -25,7 +25,6 @@ const Covid = () => {
                         <div className="covid_img blur2"></div>
                     </div>
                     <div className="servicios_grid">
-
                         <InfoCard 
                             style={'card'}
                             icon={<TaxiIcon fill={'var(--primary'}/>}

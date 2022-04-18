@@ -13,6 +13,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import Template from '../components/Template';
 import WspButton from '../components/WspButton';
 import Contacto from '../components/sections/Contacto';
+import Footer from '../components/Footer';
 
 const Index = () => {
     
@@ -83,6 +84,7 @@ const Index = () => {
                 <Covid/>
                 <Contacto/>
             </Main>
+            <Footer/>
         </Template>
     );
 }

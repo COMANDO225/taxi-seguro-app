@@ -1,0 +1,62 @@
+.contact_item{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1.2rem;
+}
+.contacto_icon{
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+    background-color: rgba(156, 156, 156, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.contacto_info span{
+    color: var(--primary);
+}
+.mailIcon{
+    background-color: rgba(242, 0, 20, 0.2);
+}
+.mailIcon svg{
+    fill: #F20013;
+}
+.mailInfo span{
+    color: #F20013;
+}
+
+.celIcon{
+    background-color: rgba(7, 137, 250, 0.12);
+}
+.celIcon svg{
+    fill: #0789FA;
+}
+.celInfo span{
+    color: #0789FA;
+}
+
+.wspIcon{
+    background-color: rgba(45, 215, 82, 0.2);
+}
+.wspIcon svg{
+    fill: #2DD753;
+}
+.wspInfo span{
+    color: #2DD753;
+}
+
+.fbIcon{
+    background-color: rgba(24, 118, 242, 0.1);
+}
+.fbIcon svg{
+    fill: #1877F2;
+}
+.fbInfo span{
+    color: #1877F2;
+}
+
+.contacto_button{
+    margin-top: 2.5rem;
+}
