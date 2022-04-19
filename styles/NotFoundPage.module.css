@@ -1,0 +1,44 @@
+.notFound{
+    min-height: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #333;
+}
+.notInfo{
+    width: 95%;
+    margin: 0 auto;
+}
+.notFound h1{
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+.notFound h2{
+    text-transform: uppercase;
+}
+.notFound p{
+    margin-top: 1rem;
+}
+
+
+.notfound_img{
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: fit-content;
+    max-height: 400px;
+    margin: 0 auto;
+}
+.bar{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

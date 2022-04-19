@@ -126,11 +126,9 @@ const Footer = () => {
             </footer>
             <AlmeydaBar/>
             <div className={styles.taco}>
-                <div className="wrapper">
-                    <div className={styles.taco_content}>
-                        <p><span>Taxi Seguro </span> {yearActual} © • All Rights Reserved</p>
-                        <p className={styles.version}>v 0.9.1</p>
-                    </div>
+                <div className={styles.taco_content}>
+                    <p><span>Taxi Seguro </span> {yearActual} © • All Rights Reserved</p>
+                    <p className={styles.version}>v 0.9.1</p>
                 </div>
             </div>
         </>

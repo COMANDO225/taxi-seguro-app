@@ -59,5 +59,8 @@
     fill: var(--almeydaText);
 }
 .textStart{
-    text-align: end;
+    text-align: right;
+}
+.textEnd{
+    text-align: left;
 }

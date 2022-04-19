@@ -7,10 +7,21 @@ import WhatsAppIcon from "../icons/WhatsAppIcon";
 import FacebookCircleIcon from "../icons/FacebookCircleIcon";
 import Button from "../Button";
 
+import Image from 'next/image'
 
 const Contacto = () => {
     return (
-        <section className="section contacto" id="contacto">
+        <section className={`section contacto ${styles.contacto}`} id="contacto">
+            <div className={styles.contacto_car_auto_taxi_sponsor}>
+                <Image
+                    draggable={"false"}
+                    width={845}
+                    height={549}
+                    layout={"fixed"}
+                    src={'/img/carslide.png'}
+                    alt=""
+                />
+            </div>
             <div className="wrapper">
                 <SectionHeader
                     orientation={'start'}

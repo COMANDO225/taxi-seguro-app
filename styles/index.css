@@ -674,6 +674,16 @@ h2{
     background: center no-repeat url(../public/img/covid/covidblur.png);
 }
 
+.hr_lg{
+    background: url(../public/img/covid/doted.png) 0% 0% repeat-x;
+    height: 16px;
+    margin: 0;
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+
 
 
 /*=============================================
