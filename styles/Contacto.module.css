@@ -81,7 +81,7 @@
 .contacto_button{
     margin-top: 2.5rem;
 }
-@media(min-width: 950px){
+@media(min-width: 1000px){
     .contacto_car_auto_taxi_sponsor{
         display: block;
     }

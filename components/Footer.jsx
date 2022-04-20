@@ -26,7 +26,7 @@ const Footer = () => {
                     <div className={styles.footer_grid}>
                         <div className={styles.footer_about}>
                             <h1 className={styles.footer_title}>Taxi Seguro</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, dolor? Ad voluptatem libero ducimus eligendi fugit ipsam dignissimos explicabo.</p>
+                            <p>Somos una empresa formal dedicada y especializada en el servicio de movilidad en toda la ciudad de Lima y fuera.</p>
                             <div className={styles.buttons_group}>
                                 <EnlaceBox>
                                     <FacebookCircleIcon fill={'#fff'}/>

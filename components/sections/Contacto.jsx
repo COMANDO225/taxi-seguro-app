@@ -38,7 +38,7 @@ const Contacto = () => {
                             <GmailIcon/>
                         </div>
                         <div className={`${styles.contacto_info} ${styles.mailInfo}`}>
-                            taxiseguro<span>@gmail.com</span>
+                            <a href="#">taxiseguro<span>@gmail.com</span></a>
                         </div>
                     </div>
                     <div className={styles.contact_item}>
@@ -46,7 +46,7 @@ const Contacto = () => {
                             <PhoneIcon/>
                         </div>
                         <div className={`${styles.contacto_info} ${styles.celInfo}`}>
-                            <span>+51 </span>916 019 563
+                            <a href="tel:+51927974418" rel='noreferrer'><span>+51 </span>927 974 418</a>
                         </div>
                     </div>
                     <div className={styles.contact_item}>
@@ -54,7 +54,7 @@ const Contacto = () => {
                             <WhatsAppIcon/>
                         </div>
                         <div className={`${styles.contacto_info} ${styles.wspInfo}`}>
-                            <a href=""><span>+51 </span>916 019 563</a>
+                            <a href="https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* consultar con usted" target={'_blank'} rel='noreferrer'><span>+51 </span>927 974 418</a>
                         </div>
                     </div>
                     <div className={styles.contact_item}>
@@ -66,7 +66,7 @@ const Contacto = () => {
                         </div>
                     </div>
                     <div className={styles.contacto_button}>
-                        <Button enlace={'tel:+51916019563'} notarget type={'primary'} size={'lg'}>Llámenos 24/7</Button>
+                        <Button enlace={'tel:+51927974418'} notarget type={'primary'} size={'lg'}>Llámenos 24/7</Button>
                     </div>
                 </div>
             </div>

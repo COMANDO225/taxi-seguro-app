@@ -1,10 +1,21 @@
-import WhatsAppIcon from "./icons/WhatsAppIcon";
+import ButtonWhatsApp from "./ButtonWhatsApp"
+import Image from 'next/image'
 
-const ProductCard = ({name, subtitle, description, price, enlace}) => {
+const ProductCard = ({name, img, subtitle, description, price}) => {
     return (
         <div className="flotaCard">
             <div className="flotaCard_head">
-                imagen de auto
+                <div className="flotar_card_img_container">
+                    <div className="flotar_card_img">
+                        <Image
+                            draggable={false}
+                            layout="fill"
+                            objectFit="cover"
+                            src={`/img/flota/${img}.png`}
+                            alt={`imagen de ${name}`}
+                        />
+                    </div>
+                </div>
             </div>
             <div className="flotaCard_body">
                 <div className="flotaCard_body_info">
@@ -13,18 +24,13 @@ const ProductCard = ({name, subtitle, description, price, enlace}) => {
                     <p className="flotaCard_desc">{description}</p>
                 </div>
                 <div className="flotaCard_body_prices">
-                    <div className="label_price">Precio de Ida (Going Price):</div>
+                    <div className="label_price">Desde (precio manejable):</div>
                     
                     <div className="menu_prices">
                         <div className="flotaPrice"><span>S/.</span> {price}</div>
-                        <a  className="flotaCard_btn" target={"_blank"} rel='noreferrer'
-                            href={enlace}
-                        >
-                            <div className="wsp_icon_floatCard">
-                                <WhatsAppIcon/>
-                            </div>
-                            <p>WhatsApp</p>
-                        </a>
+                        <ButtonWhatsApp
+                            enlace={`https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* deseo reservar el ${name}`}
+                        />
                     </div>
                 </div>
             </div>
@@ -37,7 +43,6 @@ ProductCard.defaultProps = {
     subtitle: '4 pasajeros (passengers)',
     description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
     price: '70.00',
-    enlace: 'https://www.facebook.com/anderson.almeydatorres',
 }
 
 export default ProductCard;

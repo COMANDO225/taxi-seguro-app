@@ -1,10 +1,17 @@
-
 // componentes
-import styles from '../styles/Header.module.css'
-import Button from './Button';
-import Image from 'next/image'
-import DropIcon from './icons/DropIcon';
 import {Link as LinS} from 'react-scroll'
+import styles from '../styles/Header.module.css'
+
+// components
+import Button from './Button'
+import Image from 'next/image'
+
+// icons
+import DropIcon from './icons/DropIcon'
+import InterbankIcon from './icons/InterbankIcon'
+import BcpIcon from './icons/BcpIcon'
+import YapeIcon from './icons/YapeIcon'
+
 
 const Header = () => {
     return (
@@ -29,8 +36,22 @@ const Header = () => {
                     <p className={styles.hero_parraf}>Brindamos el servicio de transporte más seguro y completo
                     de Lima.</p>
                     <div className={styles.hero_buttons}>
-                        <Button enlace={'tel:+51916019563'} notarget type={'primary'}>+51 916 019 563</Button>
+                        <Button enlace={'tel:+51927974418'} notarget type={'primary'}>+51 927 974 418</Button>
                         <LinS to='flota' spy={true} offset={-60} smooth={true} className={'taxi_btn btn-shadow'} duration={380}>ver flota</LinS>
+                    </div>
+
+                    <div className={styles.methods_pago}>
+                        
+                        <div className={styles.bcp_icon}>
+                            <BcpIcon height={25} />
+                        </div>
+                        <div className={styles.interbank_icon}>
+                            <InterbankIcon height={25} />
+                        </div>
+                        <div className={styles.yape_icon}>
+                            <YapeIcon height={35}/>
+                        </div>
+                        <div className={styles.plin_icon}/>
                     </div>
                 </div>
                 <div className={styles.hero_imagen}>

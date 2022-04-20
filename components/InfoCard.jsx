@@ -1,11 +1,26 @@
 import AvionIcon from "./icons/AvionIcon";
+import Image from 'next/image'
 
-const InfoCard = ({children, title, icon, style}) => {
+
+const InfoCard = ({children, title, icon, style, img}) => {
     return (
         <div className={style ? `info_card ${style}` : 'info_card'}>
             <div className="info_card_svg_container">
                 <div className="info_card_svg">
-                    {icon}
+                    {img &&
+                        <Image
+                            layout="fill"
+                            objectFit="cover"
+                            src={img}
+                            alt=""
+                        />
+                    }
+                    {
+                        icon &&
+                        <>
+                            {icon}
+                        </>
+                    }
                 </div>
             </div>
             <div className="info_card_content">

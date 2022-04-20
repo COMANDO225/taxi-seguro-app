@@ -45,6 +45,7 @@ const CarouselNosotros = () => {
                         <div className="SliderContainer">
                             <LoadingContainer>
                                 <Image
+                                    priority
                                     blurDataURL="blur"
                                     layout="fill"
                                     objectFit="cover"

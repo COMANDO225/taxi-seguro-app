@@ -40,7 +40,7 @@
     max-width: var(--width-layout);
     margin: 0 auto;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 2rem;
     z-index: 5;
 }
 .hero_container{
@@ -56,14 +56,15 @@
     font-size: 3.4rem;
     font-family: 'Lobster', cursive;
     font-weight: 100;
-    margin: 5px 0 26px 0;
+    margin: 5px 0 24px 0;
 }
 .hero_title span{
     color: var(--primary);
 }
 .hero_parraf{
-    margin-bottom: 35px;
+    margin-bottom: 1.5rem;
 }
+
 .hero_imagen{
     position: relative;
     width: 100%;
@@ -77,7 +78,6 @@
 }
 .timeService_content{
     display: none;
-    /* background-color: aqua; */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -119,6 +119,76 @@
     gap: 1rem;
 }
 
+.methods_pago{
+    display: flex;
+    width: 70%;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+    margin: 1rem  auto 0 auto;
+}
+.interbank_icon,
+.bcp_icon,
+.yape_icon,
+.plin_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+.interbank_icon,
+.bcp_icon,
+.yape_icon{
+    transition: all .25s ease;
+}
+.bcp_icon,
+.interbank_icon{
+    padding: 0 .5rem;
+    border-radius: 6px;
+}
+.interbank_icon{
+    background-color: #fafafa;
+}
+.interbank_svg,
+.fillLogo,
+.fillText{
+    transition: all .25s ease;
+}
+.interbank_icon:hover{
+    background-color: #fff;
+}
+.interbank_icon:hover .fillLogo{
+    fill: #0033ff;
+}
+.interbank_icon:hover .fillText{
+    fill: #00dd3b;
+}
+.bcp_icon{
+    background-color: #0028a2;
+}
+.bcp_icon:hover{
+    background-color: #0033ff;
+}
+.yape_icon{
+    width: 45px;
+    background-color: #9d00a6;
+    border-radius: 6px;
+}
+.yape_icon:hover{
+    background-color: #b100d1;
+    /* border-radius: 50%; */
+}
+.plin_icon{
+    width: 45px;
+    background-color: aqua;
+    background: url(../public/img/pagos/plin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media(min-width: 860px){
     .hero_banner{
         padding: 0;
@@ -126,9 +196,10 @@
         grid-template-columns: 45fr 55fr;
         height: 700px;
         height: 600px;
+        row-gap: 4rem;
     }
     .hero_container{
-        transform: translateY(-35px);
+        transform: translateY(-50px);
         display: flex;
         flex-direction: column;
         text-align: start;
@@ -154,5 +225,10 @@
     }
     .hero_parraf{
         font-size: 17px;
+    }
+    .methods_pago{
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 1rem;
     }
 }

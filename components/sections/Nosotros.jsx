@@ -15,7 +15,14 @@ const Nosotros = ({nosotrosBreak}) => {
                     </div>
                     <div className="nosotros_info">
                         <SectionHeader subtitle={'quienes somos'} orientation={nosotrosBreak && 'start'}>Nosotros</SectionHeader>
-                        <p className="nostros_parraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div className="nostros_parraf">
+                            <p>Somos una empresa formal dedicada y especializada en el servicio de movilidad en toda la ciudad de Lima y fuera.</p>
+                            <p>Nuestros conductores y unidades están altamente calificados y certificados para brindar a nuestros clientes un servicio 
+                                de excelencia y calidad, seguimos las medidas de protección y Bioseguridad, según <strong>DS N° N° 044-2020-PCM.</strong></p>
+                            <p>
+                                Contamos con Unidades desinfectadas, monitoreadas con GPS y todos los protocolos de bioseguridad que aseguran un viaje placentero en cada recorrido.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className="conocenos_container">

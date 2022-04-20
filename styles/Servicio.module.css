@@ -1,0 +1,79 @@
+.servicios_grid{
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+}
+.section{
+    padding: 60px 0;
+    /* padding-bottom: 1rem; */
+}
+.city_tour_title{
+    padding: 40px 0;
+    background-color: var(--primary);
+}
+.city_tour_title h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: 95%;
+    max-width: var(--width-layout);
+    margin: 0 auto;
+}
+
+.city_tour_grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.city_tour_item{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.city_tour_item_img{
+    width: 100%;
+    height: 210px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.city_tour_item_title{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.city_tour_item_title h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--primary);
+    line-height: 22px;
+}
+.reservar_tour{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+@media(min-width: 600px){
+    .city_tour_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width: 768px){
+    .servicios_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(min-width: 820px){
+    .city_tour_grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(min-width: 980px){
+    .servicios_grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(min-width: 1300px){
+    .city_tour_grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

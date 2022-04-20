@@ -1,18 +1,14 @@
 import {useState , useEffect} from 'react';
+import styles from '../styles/Navbar.module.css'
 
 // react-scroll
 import {Link as LinS} from 'react-scroll'
 
 import Button from "./Button"
-
-import styles from '../styles/Navbar.module.css'
-
 import LogoTaxi from '../components/icons/LogoTaxi'
 import Link from 'next/link'
 import useMediaQuery from '../hooks/useMediaQuery';
 import Navigations from './Navigations';
-
-
 
 const Navbar = ({navNull}) => {
 
@@ -89,7 +85,7 @@ const Navbar = ({navNull}) => {
                                     <LinS onClick={menuDesactive} to='covid' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>covid-19</LinS>
                                     <LinS onClick={menuDesactive} to='contacto' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>contacto</LinS>
                                     <div className={'center-btn'}>
-                                        <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                                        <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
                                     </div>
                                 </Navigations>
                                 :
@@ -118,7 +114,7 @@ const Navbar = ({navNull}) => {
                             <LinS onClick={menuDesactive} to='covid' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>covid-19</LinS>
                             <LinS onClick={menuDesactive} to='contacto' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>contacto</LinS>
                             <div className={'center-btn'}>
-                                <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                                <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
                             </div>
                         </Navigations>
                     }

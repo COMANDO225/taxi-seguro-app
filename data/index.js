@@ -7,59 +7,67 @@ const generarId = () => {
 export const autos = [
     {
         id: generarId(),
-        name: 'Auto particular 1',
-        subtitle: '4 pasajeros (passengers)',
+        name: 'Kia Cerato',
+        img: 'cerato',
+        subtitle: 'auto - 4 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '70.00',
-        enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        price: '50.00',
     },
     {
         id: generarId(),
-        name: 'Auto particular 2',
-        subtitle: '4 pasajeros (passengers)',
+        name: 'Hyundai Elantra',
+        img: 'elantra',
+        subtitle: 'auto - 4 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '70.00',
-        enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        price: '50.00',
     },
     {
         id: generarId(),
-        name: 'Auto particular 3',
-        subtitle: '4 pasajeros (passengers)',
+        name: 'Toyota Corolla',
+        img: 'corolla',
+        subtitle: 'auto - 4 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '70.00',
-        enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        price: '50.00',
     },
     {
         id: generarId(),
-        name: 'Auto particular 4',
-        subtitle: '4 pasajeros (passengers)',
+        name: 'Toyota Yaris',
+        img: 'yaris',
+        subtitle: 'auto - 4 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '70.00',
-        enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        price: '50.00',
     },
     {
         id: generarId(),
-        name: 'Auto particular 5',
-        subtitle: '4 pasajeros (passengers)',
-        description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '70.00',
-        enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        name: 'Kia Sportage',
+        img: 'sportage',
+        subtitle: 'camioneta - 6 pasajeros',
+        description: '3 filas de asientos, viaja comodo sin dejar a nadie para 1 - 6 personas.',
+        price: '65.00',
     },
     {
         id: generarId(),
-        name: 'Auto particular 6',
-        subtitle: '4 pasajeros (passengers)',
-        description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '70.00',
-        enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        name: 'Hyundai Santa Fe',
+        img: 'santafe',
+        subtitle: 'camioneta - 6 pasajeros',
+        description: '3 filas de asientos, viaja comodo sin dejar a nadie para 1 - 6 personas.',
+        price: '65.00',
     },
     {
         id: generarId(),
-        name: 'Auto particular 7',
-        subtitle: '4 pasajeros (passengers)',
+        name: 'Hyundai H1',
+        img: 'h1',
+        subtitle: 'van - 10 pasajeros',
+        description: 'Con una capacidad máxima de 10 pasajeros excelente para traslados y turismo.',
+        price: '120.00',
+    },
+    {
+        id: generarId(),
+        name: 'Mercedes Sprinter',
+        img: 'sprinter',
+        subtitle: 'sprinter - 18 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '70.00',
-        enlace: 'https://www.facebook.com/anderson.almeydatorres',
+        price: '--.--',
     },
 ]
 
@@ -113,5 +121,36 @@ export const choferes = [
         id: generarId(),
         nombre: 'nombre',
         src: '/img/choferes/chofer10.png'
+    },
+]
+
+export const tours = [
+    {
+        id : generarId(),
+        nombre: 'Paracas'
+    },
+    {
+        id : generarId(),
+        nombre: 'Ica'
+    },
+    {
+        id : generarId(),
+        nombre: 'Lunahuana'
+    },
+    {
+        id : generarId(),
+        nombre: 'Churin'
+    },
+    {
+        id : generarId(),
+        nombre: 'Caral'
+    },
+    {
+        id : generarId(),
+        nombre: 'Antioquia'
+    },
+    {
+        id : generarId(),
+        nombre: 'Huaraz',
     },
 ]

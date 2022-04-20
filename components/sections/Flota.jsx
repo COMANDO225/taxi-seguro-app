@@ -22,7 +22,7 @@ const Flota = () => {
         <section className="section flota" id='flota'>
             <div className="wrapper">
                 <SectionHeader subtitle={'presentamos'}>Nuestra Flota</SectionHeader>
-                <p className="section_parraf">En Taxi Seguro tenemos una amplia gama de vehiculos para brindarte una buena experiencia en calidad de servicio, seguridad, protocolos de bioseguridad y más.</p>
+                <p className="section_parraf">En Taxi Seguro tenemos una amplia gama de vehículos para brindarte una buena experiencia en calidad de servicio, seguridad, protocolos de bioseguridad y más.</p>
             </div>
             <div className="section_body">
                 <div className="slider_layout">
@@ -62,10 +62,10 @@ const Flota = () => {
                                     <div className="card_container">
                                         <ProductCard
                                             name={producto.name}
+                                            img = {producto.img}
                                             subtitle = {producto.subtitle}
                                             description = {producto.description}
                                             price = {producto.price}
-                                            enlace = {producto.enlace}
                                         />
                                     </div>
                                 </SwiperSlide>
