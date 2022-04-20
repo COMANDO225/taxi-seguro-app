@@ -121,7 +121,7 @@
 
 .methods_pago{
     display: flex;
-    width: 70%;
+    width: 75%;
     gap: 1rem;
     align-items: center;
     flex-wrap: wrap;
@@ -136,7 +136,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
+    height: 44px;
 }
 .interbank_icon,
 .bcp_icon,
@@ -145,7 +145,7 @@
 }
 .bcp_icon,
 .interbank_icon{
-    padding: 0 .5rem;
+    padding: 0 .8rem;
     border-radius: 6px;
 }
 .interbank_icon{

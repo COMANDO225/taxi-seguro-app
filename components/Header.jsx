@@ -43,10 +43,10 @@ const Header = () => {
                     <div className={styles.methods_pago}>
                         
                         <div className={styles.bcp_icon}>
-                            <BcpIcon height={25} />
+                            <BcpIcon height={20} />
                         </div>
                         <div className={styles.interbank_icon}>
-                            <InterbankIcon height={25} />
+                            <InterbankIcon height={20} />
                         </div>
                         <div className={styles.yape_icon}>
                             <YapeIcon height={35}/>
