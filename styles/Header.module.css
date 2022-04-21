@@ -44,6 +44,7 @@
     z-index: 5;
 }
 .hero_container{
+    width: 100%;
     margin: 0;
     text-align: center;
 }
@@ -84,6 +85,7 @@
     width: 125px;
     height: 180px;
     margin: 0 auto;
+    
     animation: react 10s ease infinite;
 
     animation-duration:3s;
@@ -113,10 +115,12 @@
     }
 }
 
+
 .hero_buttons{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .methods_pago{

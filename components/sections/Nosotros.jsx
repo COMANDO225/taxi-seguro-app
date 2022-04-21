@@ -1,6 +1,8 @@
 import CarouselNosotros from "../CarouselNosotros";
 import LoadingContainer from "../LoadingContainer";
 import SectionHeader from "../SectionHeader";
+import Image from 'next/image'
+
 
 const Nosotros = ({nosotrosBreak}) => {
 
@@ -11,7 +13,15 @@ const Nosotros = ({nosotrosBreak}) => {
             <div className="wrapper">
                 <div className="dual_grid">
                     <div className="nosotros_img_container">
-                        <LoadingContainer></LoadingContainer>
+                        <LoadingContainer>
+                            <Image
+                                draggable={"false"}
+                                layout="fill"
+                                objectFit="cover"
+                                src={'/img/logomockup.jpg'}
+                                alt="imagen logo de taxi seguro"
+                            />
+                        </LoadingContainer>
                     </div>
                     <div className="nosotros_info">
                         <SectionHeader subtitle={'quienes somos'} orientation={nosotrosBreak && 'start'}>Nosotros</SectionHeader>

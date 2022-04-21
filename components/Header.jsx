@@ -11,6 +11,7 @@ import DropIcon from './icons/DropIcon'
 import InterbankIcon from './icons/InterbankIcon'
 import BcpIcon from './icons/BcpIcon'
 import YapeIcon from './icons/YapeIcon'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 
 const Header = () => {
@@ -60,16 +61,18 @@ const Header = () => {
                         <div className={styles.timeService_content}>
                             <DropIcon/>
                         </div>
-                        <Image
-                            draggable={'false'}
-                            priority
-                            width={800}
-                            height={390}
-                            layout='responsive'
-                            objectFit='contain'
-                            src={'/img/Corolla-negro.png'}
-                            alt="imagen de corolla taxi seguro"
-                        />
+                        <div className={styles.content_car_img}>
+                            <Image
+                                draggable={'false'}
+                                priority
+                                width={800}
+                                height={390}
+                                layout='responsive'
+                                objectFit='contain'
+                                src={'/img/toyota-corolla.png'}
+                                alt="imagen de corolla taxi seguro"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
