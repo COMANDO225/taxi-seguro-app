@@ -11,7 +11,7 @@ export const autos = [
         img: 'cerato',
         subtitle: 'auto - 4 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '50.00',
+        price: '60.00',
     },
     {
         id: generarId(),
@@ -19,7 +19,7 @@ export const autos = [
         img: 'elantra',
         subtitle: 'auto - 4 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '50.00',
+        price: '60.00',
     },
     {
         id: generarId(),
@@ -27,7 +27,7 @@ export const autos = [
         img: 'corolla',
         subtitle: 'auto - 4 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '50.00',
+        price: '60.00',
     },
     {
         id: generarId(),
@@ -35,7 +35,7 @@ export const autos = [
         img: 'yaris',
         subtitle: 'auto - 4 pasajeros',
         description: 'La opción ideal, una ruta tranquila y comoda para 1 - 4 personas.',
-        price: '50.00',
+        price: '60.00',
     },
     {
         id: generarId(),
@@ -43,7 +43,7 @@ export const autos = [
         img: 'sportage',
         subtitle: 'camioneta - 6 pasajeros',
         description: '3 filas de asientos, viaja comodo sin dejar a nadie para 1 - 6 personas.',
-        price: '65.00',
+        price: '70.00',
     },
     {
         id: generarId(),
@@ -51,7 +51,7 @@ export const autos = [
         img: 'santafe',
         subtitle: 'camioneta - 6 pasajeros',
         description: '3 filas de asientos, viaja comodo sin dejar a nadie para 1 - 6 personas.',
-        price: '65.00',
+        price: '70.00',
     },
     {
         id: generarId(),

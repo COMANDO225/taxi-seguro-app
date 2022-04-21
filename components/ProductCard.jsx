@@ -24,7 +24,7 @@ const ProductCard = ({name, img, subtitle, description, price}) => {
                     <p className="flotaCard_desc">{description}</p>
                 </div>
                 <div className="flotaCard_body_prices">
-                    <div className="label_price">Desde (precio manejable):</div>
+                    <div className="label_price">Desde:</div>
                     
                     <div className="menu_prices">
                         <div className="flotaPrice"><span>S/.</span> {price}</div>
