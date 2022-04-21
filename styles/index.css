@@ -758,7 +758,7 @@ h2{
     position: relative;
     width: 95%;
     max-width: 372px;
-    height: 530px;
+    min-height: 530px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -805,7 +805,8 @@ h2{
 }
 .flotaCard_body_prices{
     border-top: 1px solid #dfdfdf;
-    padding: 8px 0 0 0;
+    padding: 10px 0 0 0;
+    margin-top: 1rem;
 }
 
 .flotaCard_title{
@@ -853,7 +854,15 @@ h2{
     padding: 4px 0 0 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+@media (min-width: 330px) {
+    .menu_prices{
+        gap: 0;
+        justify-content: space-between;
+    }
 }
 
 .flotaSwiper .swiper-pagination{
@@ -864,11 +873,10 @@ h2{
     display: flex;
     width: 100%;
     max-width: 400px;
-    height: 600px;
+    min-height: 600px;
     justify-content: center;
     align-items: center;
     margin: auto;
-    /* background-color: rgb(228, 228, 228); */
 }
 
 .swiper{

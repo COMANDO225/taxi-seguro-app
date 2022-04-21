@@ -10,7 +10,7 @@ const ProductCard = ({name, img, subtitle, description, price}) => {
                         <Image
                             draggable={false}
                             layout="fill"
-                            objectFit="cover"
+                            objectFit="contain"
                             src={`/img/flota/${img}.png`}
                             alt={`imagen de ${name}`}
                         />
