@@ -14,7 +14,7 @@ const Navbar = ({navNull}) => {
 
     //* ========== Navbar Estados ========== *//
     // estado del navbar
-    const [navbar, setNavbar] = useState(false);
+    const [navbar, setNavbar] = useState(false)
     // monstrar el icono de menu del navbar
     const mostrarMenuIcon = useMediaQuery('(min-width: 820px)')
     // Estado del menu del navbar
@@ -81,6 +81,10 @@ const Navbar = ({navNull}) => {
                                     <LinS onClick={menuDesactive} to='hero' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>inicio</LinS>
                                     <LinS onClick={menuDesactive} to='nosotros' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>nosotros</LinS>
                                     <LinS onClick={menuDesactive} to='servicios' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>servicios</LinS>
+                                    {/* <Link 
+                                        href="/galeria">
+                                            <a className={'enlace'}>Galeria</a>
+                                    </Link> */}
                                     <LinS onClick={menuDesactive} to='flota' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>flota</LinS>
                                     <LinS onClick={menuDesactive} to='covid' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>covid-19</LinS>
                                     <LinS onClick={menuDesactive} to='contacto' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>contacto</LinS>

@@ -12,6 +12,7 @@ import InterbankIcon from './icons/InterbankIcon'
 import BcpIcon from './icons/BcpIcon'
 import YapeIcon from './icons/YapeIcon'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import BbvaIcon from './icons/BbvaIcon'
 
 
 const Header = () => {
@@ -48,6 +49,9 @@ const Header = () => {
                         </div>
                         <div className={styles.interbank_icon}>
                             <InterbankIcon height={20} />
+                        </div>
+                        <div className={styles.interbank_icon}>
+                            <BbvaIcon height={20} />
                         </div>
                         <div className={styles.yape_icon}>
                             <YapeIcon height={35}/>

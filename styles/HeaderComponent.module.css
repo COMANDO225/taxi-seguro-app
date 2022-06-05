@@ -1,0 +1,33 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: var(--textWhite);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 80px 0;
+}
+
+.headerBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.headerBackground::after{
+    
+}
+
+.hero_title {
+    position: relative;
+    font-size: 4.6rem;
+    font-size: 3.4rem;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    /* margin: 5px 0 24px 0; */
+    /* margin-top: 130px; */
+}
