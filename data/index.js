@@ -127,30 +127,37 @@ export const choferes = [
 export const tours = [
     {
         id : generarId(),
-        nombre: 'Paracas'
+        nombre: 'Paracas',
+        src: 'paracas_agezrc.jpg'
     },
     {
         id : generarId(),
-        nombre: 'Ica'
+        nombre: 'Ica',
+        src: 'ica_tpnrur.jpg'
     },
     {
         id : generarId(),
-        nombre: 'Lunahuana'
+        nombre: 'Lunahuana',
+        src: 'lunahuana_a0dxpo.jpg'
     },
     {
         id : generarId(),
-        nombre: 'Churin'
+        nombre: 'Churin',
+        src: 'churin_jfs3qz.jpg'
     },
     {
         id : generarId(),
-        nombre: 'Caral'
+        nombre: 'Caral',
+        src: 'caral_dsbrqg.jpg'
     },
     {
         id : generarId(),
-        nombre: 'Antioquia'
+        nombre: 'Antioquia',
+        src: 'antioquia_xvx7ql.jpg'
     },
     {
         id : generarId(),
         nombre: 'Huaraz',
+        src: 'huaraz_ly9ouu.jpg'
     },
 ]

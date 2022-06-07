@@ -98,7 +98,7 @@ const Servicios = () => {
                                                 draggable={false}
                                                 layout="fill"
                                                 objectFit="cover"
-                                                src={`/img/tours/${tour.nombre}.jpg`}
+                                                src={`https://res.cloudinary.com/dro4ur0kq/image/upload/v1654605848/taxiseguro/tours/${tour.src}`}
                                                 alt={`imagen del city tour de ${tour.nombre}`}
                                             />
                                         </LoadingContainer>
@@ -119,7 +119,7 @@ const Servicios = () => {
                                             draggable={false}
                                             layout="fill"
                                             objectFit="cover"
-                                            src={`/img/tours/huaral.jpg`}
+                                            src={`https://res.cloudinary.com/dro4ur0kq/image/upload/v1654605848/taxiseguro/tours/huaral_lczgic.jpg`}
                                             alt={`imagen del city tour de Castillo de chancay`}
                                         />
                                 </LoadingContainer>
