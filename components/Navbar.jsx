@@ -1,5 +1,6 @@
 import {useState , useEffect} from 'react';
 import styles from '../styles/Navbar.module.css'
+import { useRouter } from 'next/router'
 
 // react-scroll
 import {Link as LinS} from 'react-scroll'
@@ -10,13 +11,15 @@ import Link from 'next/link'
 import useMediaQuery from '../hooks/useMediaQuery';
 import Navigations from './Navigations';
 
-const Navbar = ({navNull}) => {
+const Navbar = () => {
+
+    const router = useRouter();
 
     //* ========== Navbar Estados ========== *//
     // estado del navbar
     const [navbar, setNavbar] = useState(false)
     // monstrar el icono de menu del navbar
-    const mostrarMenuIcon = useMediaQuery('(min-width: 820px)')
+    const mostrarMenuIcon = useMediaQuery('(min-width: 940px)')
     // Estado del menu del navbar
     const [menuIcon, setMenuIcon] = useState(false);
     // activar el menu
@@ -33,6 +36,8 @@ const Navbar = ({navNull}) => {
         : 
         document.body.removeAttribute('style')
     }, [menuIcon])
+
+
     const menuDesactive = () => {
         setMenuIcon(false)
     }
@@ -54,25 +59,16 @@ const Navbar = ({navNull}) => {
                     <div className={styles.logo_container}>
                         <Link href="/">
                             <a className={styles.taxiLogo}>
-                                {
-                                    navNull?
-                                    <LogoTaxi
-                                        fill={'var(--primary'}
-                                        width = {100}
-                                        height = {40}
-                                    />
-                                    :
-                                    <LogoTaxi
-                                        fill={navbar ? '#000' : '#fff'}
-                                        width = {100}
-                                        height = {40}
-                                    />
-                                }
+                                <LogoTaxi
+                                    fill={navbar ? '#000' : '#fff'}
+                                    width = {100}
+                                    height = {40}
+                                />
                             </a>
                         </Link>
                     </div>
                     <>
-                        {!navNull ? 
+                        {router.pathname === '/' ?
                             <>
                                 {
                                 mostrarMenuIcon 
@@ -81,14 +77,13 @@ const Navbar = ({navNull}) => {
                                     <LinS onClick={menuDesactive} to='hero' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>inicio</LinS>
                                     <LinS onClick={menuDesactive} to='nosotros' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>nosotros</LinS>
                                     <LinS onClick={menuDesactive} to='servicios' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>servicios</LinS>
-                                    {/* <Link 
-                                        href="/galeria">
-                                            <a className={'enlace'}>Galeria</a>
-                                    </Link> */}
                                     <LinS onClick={menuDesactive} to='flota' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>flota</LinS>
                                     <LinS onClick={menuDesactive} to='covid' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>covid-19</LinS>
                                     <LinS onClick={menuDesactive} to='contacto' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>contacto</LinS>
-                                    <div className={'center-btn'}>
+                                    <Link href="/galeria">
+                                        <a onClick={menuDesactive} className={'enlace'}>Galeria</a>
+                                    </Link>
+                                    <div style={{marginLeft: '1rem'}} className={'center-btn'}>
                                         <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
                                     </div>
                                 </Navigations>
@@ -101,7 +96,27 @@ const Navbar = ({navNull}) => {
                                 }
                             </>
                             :
-                            <Button redirect={'/'} notarget type={'shadow'}>Regresar</Button>
+                            <>
+                                {mostrarMenuIcon 
+                                ?
+                                <Navigations>
+                                    <Link href="/">
+                                        <a onClick={menuDesactive} className={'enlace'}>inicio</a>
+                                    </Link>
+                                    <LinS onClick={menuDesactive} to='gallery_choferes' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>choferes</LinS>
+                                    <LinS onClick={menuDesactive} to='gallery_entregas' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>trabajos</LinS>
+                                    <div style={{marginLeft: '1rem'}} className={'center-btn'}>
+                                        <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                                    </div>
+                                </Navigations>
+                                :
+                                <div className={menuIcon ? 'taxi_burger active' : 'taxi_burger'} onClick={menuActive}>
+                                    <div className="linea l_sup"></div>
+                                    <div className="linea l_cen"></div>
+                                    <div className="linea l_inf"></div>
+                                </div>
+                                }
+                            </>
                         }
                     </>
                 </div>
@@ -109,7 +124,7 @@ const Navbar = ({navNull}) => {
             {
                 menuIcon &&
                 <>
-                    {!mostrarMenuIcon &&
+                    {router.pathname === '/' ?
                         <Navigations mode={'column'} menuDesactive = {menuDesactive}>
                             <LinS onClick={menuDesactive} to='hero' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>inicio</LinS>
                             <LinS onClick={menuDesactive} to='nosotros' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>nosotros</LinS>
@@ -117,6 +132,20 @@ const Navbar = ({navNull}) => {
                             <LinS onClick={menuDesactive} to='flota' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>flota</LinS>
                             <LinS onClick={menuDesactive} to='covid' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>covid-19</LinS>
                             <LinS onClick={menuDesactive} to='contacto' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>contacto</LinS>
+                            <Link href="/galeria">
+                                <a onClick={menuDesactive} className={'enlace'}>Galeria</a>
+                            </Link>
+                            <div className={'center-btn'}>
+                                <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                            </div>
+                        </Navigations>
+                        :
+                        <Navigations mode={'column'} menuDesactive = {menuDesactive}>
+                            <Link href="/">
+                                <a onClick={menuDesactive} className={'enlace'}>inicio</a>
+                            </Link>
+                            <LinS onClick={menuDesactive} to='gallery_choferes' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>Choferes</LinS>
+                            <LinS onClick={menuDesactive} to='gallery_entregas' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>trabajos</LinS>
                             <div className={'center-btn'}>
                                 <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
                             </div>

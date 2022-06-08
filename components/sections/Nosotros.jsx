@@ -18,7 +18,7 @@ const Nosotros = ({nosotrosBreak}) => {
                                 draggable={"false"}
                                 layout="fill"
                                 objectFit="cover"
-                                src={'/img/logomockup.jpg'}
+                                src={'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725599/taxiseguro/logomockup_faydtp.jpg'}
                                 alt="imagen logo de taxi seguro"
                             />
                         </LoadingContainer>

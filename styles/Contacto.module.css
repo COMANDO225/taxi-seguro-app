@@ -82,6 +82,85 @@
 .contacto_button{
     margin-top: 2.5rem;
 }
+
+.metodopago{
+    /* background-color: #0789FA; */
+    text-align: center;
+    padding: 2rem 0 2.5rem 0;
+}
+.metodopago_title h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.metodopago_body {
+    display: flex;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* background-color: #00dd3b; */
+    gap: 1rem;
+}
+
+.interbank_icon,
+.bbva_icon,
+.bcp_icon,
+.yape_icon,
+.plin_icon,
+.mastercard_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.visa_icon{
+    margin: 0 auto;
+}
+.interbank_icon,
+.bbva_icon,
+.bcp_icon,
+.yape_icon{
+    transition: all .25s ease;
+}
+.bcp_icon,
+.interbank_icon,
+.bbva_icon {
+    padding: 0 .8rem;
+    border-radius: 6px;
+}
+.interbank_icon,
+.bbva_icon{
+    background-color: #fafafa;
+}
+
+.bcp_icon{
+    background-color: #0028a2;
+}
+.yape_icon{
+    width: 45px;
+    background-color: #9d00a6;
+    border-radius: 6px;
+}
+.plin_icon{
+    width: 45px;
+    background-color: aqua;
+    background: url(../public/img/pagos/plin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.visa_icon{
+    width: 64px;
+    background-color: aqua;
+    background: url(../public/img/pagos/visa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 @media(min-width: 1000px){
     .contacto_car_auto_taxi_sponsor{
         display: block;

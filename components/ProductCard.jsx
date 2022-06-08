@@ -1,7 +1,7 @@
 import ButtonWhatsApp from "./ButtonWhatsApp"
 import Image from 'next/image'
 
-const ProductCard = ({name, img, subtitle, description, price}) => {
+const ProductCard = ({name, img, subtitle, description, price, dolarprice}) => {
     return (
         <div className="flotaCard">
             <div className="flotaCard_head">
@@ -11,7 +11,7 @@ const ProductCard = ({name, img, subtitle, description, price}) => {
                             draggable={false}
                             layout="fill"
                             objectFit="contain"
-                            src={`/img/flota/${img}.png`}
+                            src={`https://res.cloudinary.com/dro4ur0kq/image/upload/v1654605936/taxiseguro/flota/${img}`}
                             alt={`imagen de ${name}`}
                         />
                     </div>
@@ -27,7 +27,7 @@ const ProductCard = ({name, img, subtitle, description, price}) => {
                     <div className="label_price">Desde:</div>
                     
                     <div className="menu_prices">
-                        <div className="flotaPrice"><span>S/.</span> {price}</div>
+                        <div className="flotaPrice"><span>$</span> {dolarprice ? dolarprice.toFixed(2) : '--.--'}</div>
                         <ButtonWhatsApp
                             enlace={`https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* deseo reservar el ${name}`}
                         />

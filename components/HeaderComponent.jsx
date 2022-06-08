@@ -16,7 +16,8 @@ const HeaderComponent = () => {
                     alt="imagen del header taxi seguro"
                 />
             </div>
-            <h1 className={styles.hero_title}>Taxi <span>Seguro</span></h1>
+            <h1 className='tituloinvisible'>Taxi Seguro - Servicio de taxi ejecutivo | sección de Galeria de fotos</h1>
+            <h2 className={styles.hero_title}>Nuestra <span>Galeria</span></h2>
         </header>
     );
 }

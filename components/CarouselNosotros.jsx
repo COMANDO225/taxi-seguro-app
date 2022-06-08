@@ -49,7 +49,7 @@ const CarouselNosotros = () => {
                                     blurDataURL="blur"
                                     layout="fill"
                                     objectFit="cover"
-                                    src={chofer.src}
+                                    src={`https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/${chofer.src}`}
                                     alt={`imagen de chofer`}
                                 />
                             </LoadingContainer>

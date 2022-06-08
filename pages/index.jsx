@@ -12,6 +12,7 @@ import Template from '../components/Template';
 import WspButton from '../components/WspButton';
 import Contacto from '../components/sections/Contacto';
 import Footer from '../components/Footer';
+// import Recomendaciones from '../components/sections/Recomendaciones';
 
 const Index = () => {
     
@@ -21,12 +22,17 @@ const Index = () => {
         {ssr:false}
     )
 
+    const Recomendaciones = dynamic(
+        () => import('../components/sections/Recomendaciones'),
+        {ssr:false}
+    )
+
     // break nosotros section title
-    const nosotrosBreak = useMediaQuery('(min-width: 820px)')
+    const nosotrosBreak = useMediaQuery('(min-width: 940px)')
 
     return (
         
-        <Template page={'Inicio'}>
+        <Template page={'Servicios de taxi corporativo'}>
             <Navbar/>
             <WspButton/>
             <Header/>
@@ -34,6 +40,7 @@ const Index = () => {
                 <Nosotros nosotrosBreak = {nosotrosBreak}/>
                 <Servicios/>
                 <Flota/>
+                <Recomendaciones/>
                 <Covid/>
                 <Contacto/>
             </Main>

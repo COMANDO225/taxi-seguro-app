@@ -12,7 +12,6 @@ const InterbankIcon = ({fillText, fillLogo,width,height}) => {
             <path
             className={styles.fillLogo}
             d="M0 22h19c1.73.008 2.983-1.223 3-3V0H3C1.274-.005.023 1.224 0 3v19Zm5-4 12-2V4L5 6v12Z"
-            // fill="#2F4A9F"
             fill={fillLogo}
             fillRule="evenodd"
             />

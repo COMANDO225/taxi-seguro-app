@@ -1,7 +1,3 @@
-// react-scroll
-import {Link as LinS} from 'react-scroll'
-
-import Button from "./Button"
 
 const Navigations = ({mode, children}) => {
 

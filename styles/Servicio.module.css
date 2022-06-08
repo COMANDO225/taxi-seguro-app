@@ -11,7 +11,7 @@
     padding: 40px 0;
     background-color: var(--primary);
 }
-.city_tour_title h1{
+.city_tour_title h2{
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -43,7 +43,7 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.city_tour_item_title h1{
+.city_tour_item_title h2{
     font-size: 20px;
     text-transform: uppercase;
     color: var(--primary);
@@ -65,7 +65,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media(min-width: 820px){
+@media(min-width: 940px){
     .city_tour_grid{
         grid-template-columns: repeat(3, 1fr);
     }

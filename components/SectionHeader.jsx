@@ -10,9 +10,9 @@ const SectionHeader = ({children, subtitle, orientation, theme}) => {
                 <h2>{subtitle}</h2>
                 <span className="line_r"></span>
             </div>
-            <h1 className={ orientation ? `section_title ${orientation}` : "section_title"}>
+            <h2 className={ orientation ? `section_title ${orientation}` : "section_title"}>
                 {children}
-            </h1>
+            </h2>
         </div>
     )
 }

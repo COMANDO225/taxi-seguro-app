@@ -12,7 +12,6 @@ const BbvaIcon = (props) => {
             xmlSpace="preserve"
             {...props}
         >
-            <style>{".st0{fill:#000}"}</style>
             <title>{"Mesa de trabajo 1 copia"}</title>
             <path
             className="st0"

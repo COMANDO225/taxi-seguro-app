@@ -8,9 +8,15 @@ import FacebookCircleIcon from "../icons/FacebookCircleIcon";
 import Button from "../Button";
 
 import Image from 'next/image'
+import BcpIcon from "../icons/BcpIcon";
+import InterbankIcon from "../icons/InterbankIcon";
+import BbvaIcon from "../icons/BbvaIcon";
+import YapeIcon from "../icons/YapeIcon";
+import MasterCardIcon from "../icons/MasterCardIcon";
 
 const Contacto = () => {
     return (
+        <>
         <section className={`section contacto ${styles.contacto}`} id="contacto">
             <div className={styles.contacto_car_auto_taxi_sponsor}>
                 <Image
@@ -18,8 +24,9 @@ const Contacto = () => {
                     width={845}
                     height={549}
                     layout={"fixed"}
-                    src={'/img/carslide.png'}
-                    alt=""
+                    priority
+                    src={'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725665/taxiseguro/carslide_kdfpfi.png'}
+                    alt="imagen de carro negro de seccion contacto"
                 />
             </div>
             <div className="wrapper">
@@ -32,13 +39,14 @@ const Contacto = () => {
                 <p className="section_parraf text_start contacto">
                     Somos tu mejor opción, viaja <span>seguro</span>, viaja con tu taxi <span>seguro.</span>
                 </p>
+
                 <div className="section_body">
                     <div className={styles.contact_item}>
                         <div className={`${styles.contacto_icon} ${styles.mailIcon}`}>
                             <GmailIcon/>
                         </div>
                         <div className={`${styles.contacto_info} ${styles.mailInfo}`}>
-                            <a href="#">taxiseguro<span>@gmail.com</span></a>
+                            <a href="mailto:somostaxiseguro@gmail.com">somostaxiseguro<span>@gmail.com</span></a>
                         </div>
                     </div>
                     <div className={styles.contact_item}>
@@ -54,7 +62,7 @@ const Contacto = () => {
                             <WhatsAppIcon/>
                         </div>
                         <div className={`${styles.contacto_info} ${styles.wspInfo}`}>
-                            <a href="https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* consultar con usted" target={'_blank'} rel='noreferrer'><span>+51 </span>927 974 418</a>
+                            <a href="https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro*" target={'_blank'} rel='noreferrer'><span>+51 </span>927 974 418</a>
                         </div>
                     </div>
                     <div className={styles.contact_item}>
@@ -62,7 +70,7 @@ const Contacto = () => {
                             <FacebookCircleIcon/>
                         </div>
                         <div className={`${styles.contacto_info} ${styles.fbInfo}`}>
-                            <span>/taxi.seguro/</span>
+                            <a href="https://www.facebook.com/somostaxiseguro" target={'_blank'} rel='noreferrer'><span>somostaxiseguro</span></a>
                         </div>
                     </div>
                     <div className={styles.contacto_button}>
@@ -71,6 +79,33 @@ const Contacto = () => {
                 </div>
             </div>
         </section>
+        <div className="wrapper">
+            <div className={styles.metodopago}>
+                <div className={styles.metodopago_title}>
+                    <h2>Metodos de pago</h2>
+                </div>
+                <div className={styles.metodopago_body}>
+                    <div className={styles.bcp_icon}>
+                        <BcpIcon height={20} />
+                    </div>
+                    <div className={styles.interbank_icon}>
+                        <InterbankIcon height={20} />
+                    </div>
+                    <div className={styles.bbva_icon}>
+                        <BbvaIcon height={20} fill={'#02467E'}/>
+                    </div>
+                    <div className={styles.visa_icon}/>
+                    <div className={styles.mastercard_icon}>
+                        <MasterCardIcon height={56}/>
+                    </div>
+                    <div className={styles.yape_icon}>
+                        <YapeIcon height={35}/>
+                    </div>
+                    <div className={styles.plin_icon}/>
+                </div>
+            </div>
+        </div>
+        </>
     );
 }
 

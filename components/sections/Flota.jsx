@@ -66,6 +66,7 @@ const Flota = () => {
                                             subtitle = {producto.subtitle}
                                             description = {producto.description}
                                             price = {producto.price}
+                                            dolarprice={producto.dolarprice}
                                         />
                                     </div>
                                 </SwiperSlide>

@@ -23,7 +23,7 @@ const NotFoundPage = () => {
                         width={350}
                         height={200}
                         objectFit="contain"
-                        src={'/img/notfoundimg.png'}
+                        src={'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725622/taxiseguro/notfoundimg_g3jbc9.png'}
                         alt="pagina no encontrada"
                     />
                 </div>

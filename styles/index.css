@@ -156,7 +156,10 @@ h2{
     color: #fafafa;
 }
 
-
+.tituloinvisible {
+    opacity: 0;
+    position: absolute;
+}
 
 /* enlaces - navbar */
 .navbar {
@@ -346,6 +349,9 @@ h2{
 .section {
     padding: 70px 0;
 }
+.gallery_section{
+    padding: 40px 0;
+}
 .wrapper{
     width: 95%;
     max-width: var(--width-layout);
@@ -386,6 +392,7 @@ h2{
 .section_subtitle h2{
     text-transform: uppercase;
     font-size: 15px;
+    text-align: center;
     color: rgb(189, 189, 189);
 }
 .section_title{
@@ -433,7 +440,7 @@ h2{
         line-height: 3.35rem;
     }
     .section_parraf{
-        margin-top: 50px;
+        margin-top: 40px;
     }
     .section_parraf.contacto{
         font-size: 18px;
@@ -519,7 +526,7 @@ h2{
     border-radius: 8px !important;
 }
 
-@media(min-width: 820px){
+@media(min-width: 940px){
     .dual_grid{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -918,6 +925,9 @@ h2{
 @media(min-width: 768px){
     .section{
         padding: 120px 0;
+    }
+    .gallery_section{
+        padding: 60px 0;
     }
     .section_dual_grid{
         grid-template-columns: repeat(2, 1fr);

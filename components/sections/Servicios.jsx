@@ -31,7 +31,7 @@ const Servicios = () => {
                     layout='fill'
                     objectFit='cover'
                     objectPosition={'top'}
-                    src={'/img/serviciosbg.jpg'}
+                    src={'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725614/taxiseguro/serviciosbg_hkhl07.jpg'}
                     alt="background seccion servicios"
                 />
             </div>
@@ -84,7 +84,7 @@ const Servicios = () => {
         </div>
         <div className={styles.city_tour_section}>
             <div className={styles.city_tour_title}>
-                <h1>Conoce nuestro <span>CITY TOUR</span></h1>
+                <h2>Conoce nuestro <span>CITY TOUR</span></h2>
             </div>
             <div className={styles.section}>
                 <div className="wrapper">
@@ -104,7 +104,7 @@ const Servicios = () => {
                                         </LoadingContainer>
                                     </div>
                                     <div className={styles.city_tour_item_title}>
-                                        <h1>{tour.nombre}</h1>
+                                        <h2>{tour.nombre}</h2>
                                         <ButtonWhatsApp text={'Cotizar'}
                                             enlace={`https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* deseo cotizar el servicio de City Tour para ${tour.nombre}`}
                                         />
@@ -125,7 +125,7 @@ const Servicios = () => {
                                 </LoadingContainer>
                             </div>
                             <div className={styles.city_tour_item_title}>
-                                <h1>Castillo de chancay</h1>
+                                <h2>Castillo de chancay</h2>
                                 <ButtonWhatsApp
                                     text={''}
                                     enlace={`https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* deseo cotizar el servicio de City Tour para Castillo de Chancay`}
