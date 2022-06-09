@@ -36,8 +36,16 @@ const Contacto = () => {
                 >
                     Contactate con <span>Nosotros</span>
                 </SectionHeader>
-                <p className="section_parraf text_start contacto">
+
+                <p className="text_contact primero text_start contacto">
                     Somos tu mejor opción, viaja <span>seguro</span>, viaja con tu taxi <span>seguro.</span>
+                </p>
+
+                <p className="text_contact text_start contacto">
+                    Somos empresa Peruana 100% Formal.
+                </p>
+                <p className="text_contact text_start contacto">
+                    Emitimos facturas y boletas electronicas.
                 </p>
 
                 <div className="section_body">
@@ -54,7 +62,7 @@ const Contacto = () => {
                             <PhoneIcon/>
                         </div>
                         <div className={`${styles.contacto_info} ${styles.celInfo}`}>
-                            <a href="tel:+51927974418" rel='noreferrer'><span>+51 </span>927 974 418</a>
+                            <a href="tel:+51916019563" rel='noreferrer'><span>+51 </span>916 019 563</a>
                         </div>
                     </div>
                     <div className={styles.contact_item}>
@@ -62,7 +70,7 @@ const Contacto = () => {
                             <WhatsAppIcon/>
                         </div>
                         <div className={`${styles.contacto_info} ${styles.wspInfo}`}>
-                            <a href="https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro*" target={'_blank'} rel='noreferrer'><span>+51 </span>927 974 418</a>
+                            <a href="https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro*" target={'_blank'} rel='noreferrer'><span>+51 </span>916 019 563</a>
                         </div>
                     </div>
                     <div className={styles.contact_item}>
@@ -74,7 +82,7 @@ const Contacto = () => {
                         </div>
                     </div>
                     <div className={styles.contacto_button}>
-                        <Button enlace={'tel:+51927974418'} notarget type={'primary'} size={'lg'}>Llámenos 24/7</Button>
+                        <Button enlace={'tel:+51916019563'} notarget type={'primary'} size={'lg'}>Llámenos 24/7</Button>
                     </div>
                 </div>
             </div>

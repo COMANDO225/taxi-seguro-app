@@ -2,6 +2,7 @@ import CarouselNosotros from "../CarouselNosotros";
 import LoadingContainer from "../LoadingContainer";
 import SectionHeader from "../SectionHeader";
 import Image from 'next/image'
+import Button from "../Button";
 
 
 const Nosotros = ({nosotrosBreak}) => {
@@ -18,6 +19,7 @@ const Nosotros = ({nosotrosBreak}) => {
                                 draggable={"false"}
                                 layout="fill"
                                 objectFit="cover"
+                                priority
                                 src={'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725599/taxiseguro/logomockup_faydtp.jpg'}
                                 alt="imagen logo de taxi seguro"
                             />
@@ -38,6 +40,13 @@ const Nosotros = ({nosotrosBreak}) => {
                 <div className="conocenos_container">
                     <h2>conócenos</h2>
                     <CarouselNosotros/>
+                </div>
+                <div style={{ 
+                    display: 'flex',
+                    justifyContent: 'center',
+                    marginTop: '2rem',
+                    }}>
+                <Button redirect={'/galeria'} notarget type={'primary'}>Ver Galeria</Button>
                 </div>
             </div>
         </section>

@@ -84,7 +84,7 @@ const Navbar = () => {
                                         <a onClick={menuDesactive} className={'enlace'}>Galeria</a>
                                     </Link>
                                     <div style={{marginLeft: '1rem'}} className={'center-btn'}>
-                                        <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                                        <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
                                     </div>
                                 </Navigations>
                                 :
@@ -106,7 +106,7 @@ const Navbar = () => {
                                     <LinS onClick={menuDesactive} to='gallery_choferes' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>choferes</LinS>
                                     <LinS onClick={menuDesactive} to='gallery_entregas' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>trabajos</LinS>
                                     <div style={{marginLeft: '1rem'}} className={'center-btn'}>
-                                        <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                                        <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
                                     </div>
                                 </Navigations>
                                 :
@@ -136,7 +136,7 @@ const Navbar = () => {
                                 <a onClick={menuDesactive} className={'enlace'}>Galeria</a>
                             </Link>
                             <div className={'center-btn'}>
-                                <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                                <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
                             </div>
                         </Navigations>
                         :
@@ -147,7 +147,7 @@ const Navbar = () => {
                             <LinS onClick={menuDesactive} to='gallery_choferes' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>Choferes</LinS>
                             <LinS onClick={menuDesactive} to='gallery_entregas' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>trabajos</LinS>
                             <div className={'center-btn'}>
-                                <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                                <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
                             </div>
                         </Navigations>
                     }

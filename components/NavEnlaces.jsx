@@ -12,7 +12,7 @@ const NavEnlaces = () => {
             <LinkS onClick={menuDesactive} to='covid' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>covid-19</LinkS>
             <LinkS onClick={menuDesactive} to='contacto' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>contacto</LinkS>
             <div className={'center-btn'}>
-                <Button enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
+                <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
             </div>
         </>
     );

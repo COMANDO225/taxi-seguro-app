@@ -106,7 +106,7 @@ const Servicios = () => {
                                     <div className={styles.city_tour_item_title}>
                                         <h2>{tour.nombre}</h2>
                                         <ButtonWhatsApp text={'Cotizar'}
-                                            enlace={`https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* deseo cotizar el servicio de City Tour para ${tour.nombre}`}
+                                            enlace={`https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* deseo cotizar el servicio de City Tour para ${tour.nombre}`}
                                         />
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@ const Servicios = () => {
                                 <h2>Castillo de chancay</h2>
                                 <ButtonWhatsApp
                                     text={''}
-                                    enlace={`https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* deseo cotizar el servicio de City Tour para Castillo de Chancay`}
+                                    enlace={`https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* deseo cotizar el servicio de City Tour para Castillo de Chancay`}
                                 />
                             </div>
                         </div>

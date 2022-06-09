@@ -83,66 +83,113 @@ export const choferes = [
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer2_hixpkk.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/chofer2_hixpkk.png'
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer3_fmrskj.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/chofer3_fmrskj.png'
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer4_bvorgy.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654742411/taxiseguro/choferes/chofer12_zjfl3n.jpg',
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer5_lwrpda.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654742622/taxiseguro/choferes/chofer13_noiptu.jpg',
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer7_bjc8vo.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/chofer4_bvorgy.png'
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer8_tvjfk7.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/chofer10_evvsla.png'
+    },
+    
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/chofer7_bjc8vo.png'
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer9_ukmzhx.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/chofer9_ukmzhx.png'
+    },
+]
+
+export const choferes2 = [
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654742269/taxiseguro/choferes/chofer11_wsbmgg.jpg',
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer10_evvsla.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654742623/taxiseguro/choferes/chofer14_nksmcr.jpg'
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer6_a2ccqx.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654742623/taxiseguro/choferes/chofer15_ky3zzx.jpg'
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'chofer1_dqggba.png'
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654742623/taxiseguro/choferes/chofer16_gooefa.jpg'
     },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654742623/taxiseguro/choferes/chofer17_u0rhqr.jpg'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654742623/taxiseguro/choferes/chofer18_sm0qa8.jpg'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654744251/taxiseguro/choferes/chofer19_jvuquj.jpg'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654743391/taxiseguro/choferes/chofer20_k4y7or.jpg'
+    },
+
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/chofer6_a2ccqx.png'
+    },
+    {
+        id: generarId(),
+        nombre: 'nombre',
+        src: 'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725725/taxiseguro/choferes/chofer1_dqggba.png'
+    },
+
 ]
 
 export const trabajos = [
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'cargo1_ba5rnp.jpg'
+        src: 'cargo2_gbeswr.jpg'
     },
     {
         id: generarId(),
         nombre: 'nombre',
-        src: 'cargo2_gbeswr.jpg'
+        src: 'cargo1_ba5rnp.jpg'
     },
+    
     {
         id: generarId(),
         nombre: 'nombre',
@@ -240,8 +287,14 @@ export const clientes = [
     },
     {
         id: generarId(),
-        nombre: 'Tessy Vilcapoma',
+        nombre: 'Tessy Vilchez',
         description: 'Taxi seguro, lo maximo me salvaron de un apuro, puntuales y amables.',
+        imagen: '/img/clientes/cliente1.jpg'
+    },
+    {
+        id: generarId(),
+        nombre: 'Giovana Vilchez',
+        description: 'Doy mi mas sincero agradecimiento por el trato tan excelente recibido por taxi seguro',
         imagen: '/img/clientes/cliente1.jpg'
     },
 ]

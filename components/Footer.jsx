@@ -38,7 +38,7 @@ const Footer = () => {
                                 <EnlaceBox enlace={'https://www.facebook.com/messages/t/108028615268747'}>
                                     <MessengerIcon fill={'#fff'}/>
                                 </EnlaceBox>
-                                <EnlaceBox enlace={'https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* quiero solicitar una reserva'}>
+                                <EnlaceBox enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'}>
                                     <WhatsAppIcon fill={'#fff'}/>
                                 </EnlaceBox>
                                 <EnlaceBox enlace={'mailto:somostaxiseguro@gmail.com'}>

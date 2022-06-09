@@ -29,7 +29,7 @@ const ProductCard = ({name, img, subtitle, description, price, dolarprice}) => {
                     <div className="menu_prices">
                         <div className="flotaPrice"><span>$</span> {dolarprice ? dolarprice.toFixed(2) : '--.--'}</div>
                         <ButtonWhatsApp
-                            enlace={`https://api.whatsapp.com/send?phone=51927974418&text=Hola *Taxi Seguro* deseo reservar el ${name}`}
+                            enlace={`https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* deseo reservar el ${name}`}
                         />
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const HeaderComponent = () => {
                     layout='fill'
                     objectFit='cover'
                     objectPosition={'left'}
-                    src={'/img/headerbg.jpg'}
+                    src={'https://res.cloudinary.com/dro4ur0kq/image/upload/v1654725632/taxiseguro/headerbg_pgw3ve.jpg'}
                     alt="imagen del header taxi seguro"
                 />
             </div>
