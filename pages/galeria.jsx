@@ -21,7 +21,7 @@ const GaleriaPage = () => {
             <WspButton/>
             <HeaderComponent/>
             <Main>
-                <GalleryLayout sectionId={'gallery_choferes'} title={'Galeria de choferes'}>
+                <GalleryLayout sectionId={'gallery_choferes'} title={'Galeria de conductores'}>
                     {
                         choferes.map((chofer, index) => (
                             <div key={chofer.id} className={styles.hola}>

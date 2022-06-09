@@ -103,7 +103,7 @@ const Navbar = () => {
                                     <Link href="/">
                                         <a onClick={menuDesactive} className={'enlace'}>inicio</a>
                                     </Link>
-                                    <LinS onClick={menuDesactive} to='gallery_choferes' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>choferes</LinS>
+                                    <LinS onClick={menuDesactive} to='gallery_choferes' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>conductores</LinS>
                                     <LinS onClick={menuDesactive} to='gallery_entregas' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>trabajos</LinS>
                                     <div style={{marginLeft: '1rem'}} className={'center-btn'}>
                                         <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
@@ -144,7 +144,7 @@ const Navbar = () => {
                             <Link href="/">
                                 <a onClick={menuDesactive} className={'enlace'}>inicio</a>
                             </Link>
-                            <LinS onClick={menuDesactive} to='gallery_choferes' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>Choferes</LinS>
+                            <LinS onClick={menuDesactive} to='gallery_choferes' spy={true} offset={-40} smooth={true} className={'enlace'} duration={380}>Conductores</LinS>
                             <LinS onClick={menuDesactive} to='gallery_entregas' spy={true} offset={-60} smooth={true} className={'enlace'} duration={380}>trabajos</LinS>
                             <div className={'center-btn'}>
                                 <Button enlace={'https://api.whatsapp.com/send?phone=51916019563&text=Hola *Taxi Seguro* quiero solicitar una reserva'} type={'primary'}>reservar</Button>
